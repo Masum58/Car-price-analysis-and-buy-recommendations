@@ -1,0 +1,13 @@
+title,brand,year_numeric,mileage_numeric,price_numeric,url,source,scraped_at,data_source,fuel_type,fuel_type_predicted,cleaned_at,age,is_electric,is_hybrid,is_eco,is_premium
+Renault kangoo limited edition tce,Renault,2018,42000,1200.0,https://www.2dehands.be/,2dehands.be,2025-12-10T07:44:41.282956,real_scraped_2dehands,diesel,True,2025-12-19T09:23:06.150522,7,False,False,False,False
+Renault kangoo  lichte vracht 1.5 cdi automaat 03/2023,Renault,2023,3000,3000.0,https://www.2dehands.be/,2dehands.be,2025-12-10T07:44:41.283283,real_scraped_2dehands,diesel,True,2025-12-19T09:23:06.150558,2,False,False,False,False
+BMW 316,BMW,2014,109500,8000.0,https://www.2dehands.be/,2dehands.be,2025-12-10T07:44:41.283509,real_scraped_2dehands,diesel,True,2025-12-19T09:23:06.150566,11,False,False,False,True
+Fiat Fullback Autoutilitare,Fiat,2018,170000,13500.0,https://www.2dehands.be/,2dehands.be,2025-12-10T07:44:41.283681,real_scraped_2dehands,diesel,True,2025-12-19T09:23:06.150586,7,False,False,False,False
+Ranger wildtrack 2024 raptor look,Ranger,2024,100000,4000.0,https://www.2dehands.be/,2dehands.be,2025-12-10T07:44:41.283737,real_scraped_2dehands,diesel,True,2025-12-19T09:23:06.150594,1,False,False,False,False
+Citroen C4 spacetourer 7 zitplatsen,Citroen,2021,69000,20000.0,https://www.2dehands.be/,2dehands.be,2025-12-10T07:44:41.283801,real_scraped_2dehands,diesel,True,2025-12-19T09:23:06.150599,4,False,False,False,False
+Volkswagen Passat 1.6Tdi 2017/185000km/Euro6/NAV/Cam/GEKEURD,Volkswagen,2017,185000,9000.0,https://www.2dehands.be/,2dehands.be,2025-12-10T07:44:41.284175,real_scraped_2dehands,diesel,True,2025-12-19T09:23:06.150628,8,False,False,False,False
+BMW 325i * E90 * IN PERFECTE STAAT * SPORTIEVE UITVOERING,BMW,2008,2008,2996.0,https://www.2dehands.be/,2dehands.be,2025-12-10T07:44:41.284446,real_scraped_2dehands,electric,True,2025-12-19T09:23:06.150635,17,True,False,True,True
+Citroen Berlingo XL  09/2021_8400€ netto_Keuring+Garantie,Citroen,2021,69183,8400.0,https://www.2dehands.be/,2dehands.be,2025-12-10T07:44:41.284669,real_scraped_2dehands,diesel,True,2025-12-19T09:23:06.150643,4,False,False,False,False
+VW Caddy 2.0 TDI 75kW 102CV 5 zitplaatsen 10/2020,VW,2020,163000,16500.0,https://www.2dehands.be/,2dehands.be,2025-12-10T07:44:44.085311,real_scraped_2dehands,diesel,True,2025-12-19T09:23:06.150669,5,False,False,False,False
+VW Caddy,VW,2019,107400,17500.0,https://www.2dehands.be/,2dehands.be,2025-12-10T07:44:44.085717,real_scraped_2dehands,diesel,True,2025-12-19T09:23:06.150701,6,False,False,False,False
+Automaat benzine 1.6i benzine 155000km,Renault,2009,155000,4599.0,,,,real_scraped_2dehands,petrol,,2025-12-19T09:23:06.150707,16,False,False,False,False

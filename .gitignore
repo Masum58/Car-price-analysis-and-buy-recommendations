@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+
+# Environment variables
+.env
+
+# Logs / runtime files
+progress_log.json
+
+# ML artifacts (optional)
+*.joblib
+
+# OS files
+.DS_Store
