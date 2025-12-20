@@ -11,10 +11,10 @@ print("="*60 + "\n")
 
 # Load current data
 try:
-    with open('cars_data_real_api_ready.json', 'r') as f:
+    with open('../data/raw/cars_data_real_api_ready.json', 'r') as f:
         clean_cars = json.load(f)
     
-    with open('cars_data.json', 'r') as f:
+    with open('../data/raw/cars_data.json', 'r') as f:
         all_cars = json.load(f)
     
     # Get stats
@@ -37,7 +37,7 @@ try:
     }
     
     # Load or create log
-    log_file = 'progress_log.json'
+    log_file = '../logs/progress_log.json'
     if os.path.exists(log_file):
         with open(log_file, 'r') as f:
             logs = json.load(f)

@@ -1,18 +1,21 @@
-# Python
+# Environment
+.env
+venv/
 __pycache__/
 *.pyc
 
-# Virtual environment
-venv/
+# Data
+data/raw/*.json
+data/raw/*.csv
+data/backup/
+*.log
 
-# Environment variables
-.env
+# Models
+data/ml_models/*.joblib
 
-# Logs / runtime files
+# IDE
+.vscode/
+.idea/
+*.swp
+backup_20252012_075527/
 progress_log.json
-
-# ML artifacts (optional)
-*.joblib
-
-# OS files
-.DS_Store

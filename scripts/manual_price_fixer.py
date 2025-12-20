@@ -8,11 +8,11 @@ print("🔧 MANUAL PRICE FIXER")
 print("="*70 + "\n")
 
 # Load needs review cars
-with open('cars_data_real_needs_review.json', 'r', encoding='utf-8') as f:
+with open('../data/raw/cars_data_real_needs_review.json', 'r', encoding='utf-8') as f:
     review_cars = json.load(f)
 
 # Load original data
-with open('cars_data.json', 'r', encoding='utf-8') as f:
+with open('../data/raw/cars_data.json', 'r', encoding='utf-8') as f:
     all_cars = json.load(f)
 
 print(f"Found {len(review_cars)} cars needing price fix\n")
@@ -55,7 +55,7 @@ for review_car in review_cars:
 
 # Save updated data
 if fixed_count > 0:
-    with open('cars_data.json', 'w', encoding='utf-8') as f:
+    with open('../data/raw/cars_data.json', 'w', encoding='utf-8') as f:
         json.dump(all_cars, f, indent=2, ensure_ascii=False)
     
     print("="*70)

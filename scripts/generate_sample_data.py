@@ -119,11 +119,11 @@ def main():
     cars = generate_dataset(100)
     
     # Save to JSON
-    with open('cars_data_sample.json', 'w', encoding='utf-8') as f:
+    with open('../data/raw/cars_data_sample.json', 'w', encoding='utf-8') as f:
         json.dump(cars, f, indent=2, ensure_ascii=False)
     
     print(f"\n✓ Generated {len(cars)} realistic car listings")
-    print(f"✓ Saved to 'cars_data_sample.json'")
+    print(f"✓ Saved to '../data/raw/cars_data_sample.json'")
     
     # Show stats
     brands = {}

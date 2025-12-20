@@ -19,7 +19,7 @@ def load_all_sources():
     
     # 1. Sample data (clean এবং fuel_type আছে)
     try:
-        with open('cars_data_sample.json', 'r', encoding='utf-8') as f:
+        with open('../data/raw/cars_data_sample.json', 'r', encoding='utf-8') as f:
             sample_data = json.load(f)
             for car in sample_data:
                 car['data_source'] = 'sample_clean'
@@ -32,7 +32,7 @@ def load_all_sources():
     
     # 2. Scraped JSON data (problem data)
     try:
-        with open('cars_data.json', 'r', encoding='utf-8') as f:
+        with open('../data/raw/cars_data.json', 'r', encoding='utf-8') as f:
             json_data = json.load(f)
             for car in json_data:
                 car['data_source'] = 'scraped_2dehands'
@@ -45,7 +45,7 @@ def load_all_sources():
     
     # 3. CSV data (optional)
     try:
-        csv_data = pd.read_csv('cars_data.csv', encoding='utf-8')
+        csv_data = pd.read_csv('../data/raw/cars_data.csv', encoding='utf-8')
         csv_cars = csv_data.to_dict('records')
         for car in csv_cars:
             car['data_source'] = 'scraped_csv'
@@ -366,7 +366,7 @@ def main():
            car.get('year_numeric')
     ]
     
-    with open('cars_data_api_ready.json', 'w', encoding='utf-8') as f:
+    with open('../data/raw/cars_data_api_ready.json', 'w', encoding='utf-8') as f:
         json.dump(clean_only, f, indent=2, ensure_ascii=False)
     print(f"✅ cars_data_api_ready.json ({len(clean_only)} cars - ready for API)")
     

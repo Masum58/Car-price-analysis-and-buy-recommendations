@@ -17,7 +17,7 @@ def load_real_scraped_data_only():
     
     # 1. JSON scraped data
     try:
-        with open('cars_data.json', 'r', encoding='utf-8') as f:
+        with open('../data/raw/cars_data.json', 'r', encoding='utf-8') as f:
             json_data = json.load(f)
             for car in json_data:
                 car['data_source'] = 'real_scraped_2dehands'
@@ -28,7 +28,7 @@ def load_real_scraped_data_only():
     
     # 2. CSV scraped data
     try:
-        csv_data = pd.read_csv('cars_data.csv', encoding='utf-8')
+        csv_data = pd.read_csv('../data/raw/cars_data.csv', encoding='utf-8')
         csv_cars = csv_data.to_dict('records')
         for car in csv_cars:
             car['data_source'] = 'real_scraped_csv'
@@ -282,7 +282,7 @@ def main():
     print("💾 Saving files...")
     
     # 1. Real data only (all)
-    with open('cars_data_real_all.json', 'w', encoding='utf-8') as f:
+    with open('../data/raw/cars_data_real_all.json', 'w', encoding='utf-8') as f:
         json.dump(final, f, indent=2, ensure_ascii=False)
     print("✓ cars_data_real_all.json (all real cars)")
     
@@ -296,7 +296,7 @@ def main():
            not car.get('needs_manual_review')
     ]
     
-    with open('cars_data_real_api_ready.json', 'w', encoding='utf-8') as f:
+    with open('../data/raw/cars_data_real_api_ready.json', 'w', encoding='utf-8') as f:
         json.dump(api_ready, f, indent=2, ensure_ascii=False)
     print(f"✓ cars_data_real_api_ready.json ({len(api_ready)} clean cars)")
     
@@ -304,13 +304,13 @@ def main():
     needs_review = [car for car in final if car.get('needs_manual_review')]
     
     if needs_review:
-        with open('cars_data_real_needs_review.json', 'w', encoding='utf-8') as f:
+        with open('../data/raw/cars_data_real_needs_review.json', 'w', encoding='utf-8') as f:
             json.dump(needs_review, f, indent=2, ensure_ascii=False)
         print(f"⚠️  cars_data_real_needs_review.json ({len(needs_review)} cars)")
     
     # 4. CSV
     df = pd.DataFrame(api_ready)
-    df.to_csv('cars_data_real_api_ready.csv', index=False, encoding='utf-8')
+    df.to_csv('../data/raw/cars_data_real_api_ready.csv', index=False, encoding='utf-8')
     print("✓ cars_data_real_api_ready.csv")
     
     print("\n" + "="*70)
@@ -330,7 +330,7 @@ def main():
 
 🎯 Next step:
    Update ai_calculations.py to use:
-   'cars_data_real_api_ready.json'
+   '../data/raw/cars_data_real_api_ready.json'
 """)
     print("="*70 + "\n")
 

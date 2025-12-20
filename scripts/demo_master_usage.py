@@ -12,7 +12,7 @@ print("🚗 MASTER DATA USAGE DEMO")
 print("="*60 + "\n")
 
 # Load API-ready data
-with open('cars_data_api_ready.json', 'r', encoding='utf-8') as f:
+with open('../data/raw/cars_data_api_ready.json', 'r', encoding='utf-8') as f:
     api_cars = json.load(f)
 
 print(f"✅ API-ready cars loaded: {len(api_cars)}\n")
@@ -76,7 +76,7 @@ print("""
 import json
 
 def load_car_data():
-    with open('cars_data_api_ready.json') as f:
+    with open('../data/raw/cars_data_api_ready.json') as f:
         return json.load(f)
 
 # Now you have:

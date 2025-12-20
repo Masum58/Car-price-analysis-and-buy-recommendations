@@ -44,10 +44,10 @@ def check_data_files():
     print("="*70)
     
     # Check real data
-    has_real = check_file_exists('cars_data_real_api_ready.json', required=True)
+    has_real = check_file_exists('../data/raw/cars_data_real_api_ready.json', required=True)
     
     if has_real:
-        with open('cars_data_real_api_ready.json', 'r', encoding='utf-8') as f:
+        with open('../data/raw/cars_data_real_api_ready.json', 'r', encoding='utf-8') as f:
             cars = json.load(f)
         print(f"   → {len(cars)} cars in API-ready dataset")
         
@@ -57,7 +57,7 @@ def check_data_files():
             print(f"   ✅ Good: {len(cars)} cars available")
     
     # Check if sample data is still being used
-    has_sample = os.path.exists('cars_data_sample.json')
+    has_sample = os.path.exists('../data/raw/cars_data_sample.json')
     if has_sample:
         print(f"⚠️ cars_data_sample.json (should not be used in production)")
     
@@ -79,9 +79,9 @@ def check_api_configuration():
         with open('app/ai_calculations.py', 'r', encoding='utf-8') as f:
             content = f.read()
         
-        if 'cars_data_real_api_ready.json' in content:
+        if '../data/raw/cars_data_real_api_ready.json' in content:
             print("✅ Using real data (cars_data_real_api_ready.json)")
-        elif 'cars_data_api_ready.json' in content:
+        elif '../data/raw/cars_data_api_ready.json' in content:
             print("⚠️ Using mixed data (cars_data_api_ready.json)")
             print("   → Recommend changing to cars_data_real_api_ready.json")
         else:
@@ -118,9 +118,9 @@ def check_scraper():
     
     if has_scraper:
         # Check if scraped data exists
-        scraped = check_file_exists('cars_data.json', required=False)
+        scraped = check_file_exists('../data/raw/cars_data.json', required=False)
         if scraped:
-            with open('cars_data.json', 'r', encoding='utf-8') as f:
+            with open('../data/raw/cars_data.json', 'r', encoding='utf-8') as f:
                 cars = json.load(f)
             print(f"   → {len(cars)} cars in raw scraped data")
     
@@ -133,7 +133,7 @@ def test_data_quality():
     print("="*70)
     
     try:
-        with open('cars_data_real_api_ready.json', 'r', encoding='utf-8') as f:
+        with open('../data/raw/cars_data_real_api_ready.json', 'r', encoding='utf-8') as f:
             cars = json.load(f)
         
         # Check completeness

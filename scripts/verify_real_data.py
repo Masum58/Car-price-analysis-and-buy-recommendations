@@ -8,7 +8,7 @@ print("🔍 VERIFYING DATA SOURCE")
 print("="*60 + "\n")
 
 try:
-    with open('cars_data_real_api_ready.json', 'r', encoding='utf-8') as f:
+    with open('../data/raw/cars_data_real_api_ready.json', 'r', encoding='utf-8') as f:
         cars = json.load(f)
     
     print(f"✅ Loaded {len(cars)} cars from cars_data_real_api_ready.json\n")

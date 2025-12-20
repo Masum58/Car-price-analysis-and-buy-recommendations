@@ -8,7 +8,7 @@ print("🚗 CAR NEEDING REVIEW")
 print("="*60 + "\n")
 
 try:
-    with open('cars_data_real_needs_review.json', 'r') as f:
+    with open('../data/raw/cars_data_real_needs_review.json', 'r') as f:
         cars = json.load(f)
     
     if len(cars) == 0:
