@@ -19,3 +19,6 @@ data/ml_models/*.joblib
 *.swp
 backup_20252012_075527/
 progress_log.json
+scrapers/autoscout24_selenium_data.json
+scrapers/autoscout_page.html
+scrapers/autoscout_screenshot.png
