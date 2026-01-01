@@ -5,6 +5,13 @@ from fastapi import APIRouter, HTTPException
 from typing import List
 from datetime import datetime
 
+# ========== NEW: AI Recommendation Engine ==========
+from app.car_recommendation_engine import (
+    CarRecommendationEngine,
+    get_user_context_from_request,
+    format_comparison_for_ui
+)
+
 # Import request/response schemas (Pydantic models)
 from app.models import (
     CarInput,              # Input car data
@@ -27,6 +34,10 @@ from app.ai_calculations import (
 
 # Create API router
 router = APIRouter()
+
+# ========== NEW: Initialize AI Recommendation Engine ==========
+recommendation_engine = CarRecommendationEngine()
+
 
 # =========================================================
 # ANALYZE CARS
@@ -252,3 +263,254 @@ async def get_dataset_stats():
             status_code=500,
             detail=f"Error calculating stats: {str(e)}"
         )
+
+
+# =========================================================
+# ========== NEW ENDPOINTS: AI RECOMMENDATION ==========
+# =========================================================
+
+
+# =========================================================
+# COMPARE TWO CARS WITH AI
+# =========================================================
+@router.post("/compare-two-cars/")
+async def compare_two_cars_with_ai(request: dict):
+    """
+    Compare two cars with AI recommendation engine
+    
+    This endpoint uses user context to intelligently compare cars
+    and highlight the better option with detailed reasoning.
+    
+    Request body:
+    {
+        "car_a": {
+            "car_title": "BMW 320d Touring",
+            "price": "€28,500",
+            "Basic_Data": {"Seats": "5"},
+            "Technical_Data": {"Gearbox": "Automatic"},
+            "Vehicle_History": {"First_registration": "03/2019", "Mileage": "65,000 km"},
+            "Energy_Consumption": {"Fuel_type": "Diesel"}
+        },
+        "car_b": {
+            "car_title": "Audi A4 Avant",
+            "price": "€32,900",
+            "Basic_Data": {"Seats": "5"},
+            "Technical_Data": {"Gearbox": "Automatic"},
+            "Vehicle_History": {"First_registration": "05/2020", "Mileage": "45,000 km"},
+            "Energy_Consumption": {"Fuel_type": "Diesel"}
+        },
+        "user_context": {
+            "max_budget": 30000,
+            "min_seats": 5,
+            "preferred_gearbox": "automatic",
+            "preferred_fuel": "diesel",
+            "wanted_features": ["navigation", "parking sensors"],
+            "usage_type": "family",
+            "priority": "balanced"
+        }
+    }
+    
+    Response:
+    {
+        "recommended_car": "car_a",  // or "car_b" or "tie"
+        "confidence": "high",  // low, medium, high
+        "car_a": {
+            "highlight": true,  // Use this to highlight in UI!
+            "score": 87.5,
+            "insights": [
+                "✅ Well within your budget",
+                "💰 Excellent deal - below market price",
+                "🔧 Highly reliable brand and age"
+            ],
+            "warnings": []
+        },
+        "car_b": {
+            "highlight": false,
+            "score": 72.3,
+            "insights": [
+                "⭐ Great feature match for your needs"
+            ],
+            "warnings": [
+                "⚠️ Above your preferred budget"
+            ]
+        },
+        "reasoning": "Car A is the better choice with a score of 87.5/100 vs 72.3/100. It excels in: Price, Value. ✅ Well within your budget",
+        "detailed_scores": {
+            "price": {
+                "car_a_score": 0.92,
+                "car_b_score": 0.65,
+                "winner": "car_a",
+                "difference": 0.27
+            },
+            "value": {...},
+            "reliability": {...},
+            "features": {...},
+            "fuel_efficiency": {...},
+            "safety": {...}
+        }
+    }
+    """
+    try:
+        # Extract data from request
+        car_a = request.get("car_a")
+        car_b = request.get("car_b")
+        user_ctx = get_user_context_from_request(
+            request.get("user_context", {})
+        )
+        
+        # Validate input
+        if not car_a or not car_b:
+            raise HTTPException(
+                status_code=400,
+                detail="Both car_a and car_b are required"
+            )
+        
+        # Compare with AI engine
+        comparison = recommendation_engine.compare_two_cars(
+            car_a, car_b, user_ctx
+        )
+        
+        # Format for UI
+        result = format_comparison_for_ui(comparison)
+        
+        return result
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"AI comparison error: {str(e)}"
+        )
+
+
+# =========================================================
+# ANALYZE SINGLE CAR WITH AI
+# =========================================================
+@router.post("/analyze-single-car/")
+async def analyze_single_car_with_ai(request: dict):
+    """
+    Analyze single car with user context
+    
+    Provides intelligent analysis based on user preferences,
+    budget, and needs.
+    
+    Request body:
+    {
+        "car": {
+            "car_title": "BMW 320d Touring",
+            "price": "€28,500",
+            "Basic_Data": {"Seats": "5"},
+            "Technical_Data": {"Gearbox": "Automatic"},
+            "Vehicle_History": {"First_registration": "03/2019", "Mileage": "65,000 km"},
+            "Energy_Consumption": {"Fuel_type": "Diesel"}
+        },
+        "user_context": {
+            "max_budget": 30000,
+            "min_seats": 5,
+            "preferred_gearbox": "automatic",
+            "preferred_fuel": "diesel"
+        }
+    }
+    
+    Response:
+    {
+        "score": 87.5,
+        "user_fit": 87.5,
+        "insights": [
+            "✅ Well within your budget",
+            "💰 Excellent deal - below market price",
+            "🔧 Highly reliable brand and age",
+            "⭐ Great feature match for your needs",
+            "⛽ Good fuel economy for your usage"
+        ],
+        "warnings": [],
+        "scores_breakdown": {
+            "price": 0.92,
+            "value": 0.85,
+            "reliability": 0.88,
+            "features": 0.82,
+            "fuel_efficiency": 0.78,
+            "safety": 0.75
+        }
+    }
+    """
+    try:
+        # Extract data
+        car = request.get("car")
+        user_ctx = get_user_context_from_request(
+            request.get("user_context", {})
+        )
+        
+        # Validate input
+        if not car:
+            raise HTTPException(
+                status_code=400,
+                detail="car data is required"
+            )
+        
+        # Analyze with AI engine
+        analysis = recommendation_engine.analyze_car_for_user(
+            car, user_ctx
+        )
+        
+        return {
+            "score": round(analysis["user_fit"], 1),
+            "user_fit": round(analysis["user_fit"], 1),
+            "insights": analysis["insights"],
+            "warnings": analysis["warnings"],
+            "scores_breakdown": {
+                k: round(v, 2) for k, v in analysis["scores"].items()
+            }
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"AI analysis error: {str(e)}"
+        )
+
+
+# =========================================================
+# HEALTH CHECK FOR NEW ENDPOINTS
+# =========================================================
+@router.get("/ai-engine/health")
+async def ai_engine_health():
+    """
+    Check if AI recommendation engine is working
+    """
+    try:
+        # Test with dummy data
+        test_car = {
+            "car_title": "Test Car",
+            "price": "€20,000",
+            "Basic_Data": {"Seats": "5"},
+            "Technical_Data": {"Gearbox": "Manual"},
+            "Energy_Consumption": {"Fuel_type": "Diesel"}
+        }
+        
+        test_context = {
+            "max_budget": 25000,
+            "min_seats": 5
+        }
+        
+        # Try analysis
+        analysis = recommendation_engine.analyze_car_for_user(
+            test_car, test_context
+        )
+        
+        return {
+            "status": "healthy",
+            "engine": "CarRecommendationEngine",
+            "version": "1.0",
+            "test_score": round(analysis["user_fit"], 1),
+            "message": "AI engine is working correctly"
+        }
+        
+    except Exception as e:
+        return {
+            "status": "unhealthy",
+            "error": str(e)
+        }
