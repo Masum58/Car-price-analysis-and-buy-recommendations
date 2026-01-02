@@ -4376,5 +4376,1401 @@
       "location": "Rue Gendebien 62,\n6200 Chatelineau, BE",
       "phone": []
     }
+  },
+  {
+    "car_title": "Ford EcoSport",
+    "car_subtitle": "Ford Ecosport",
+    "details_url": "https://www.autoscout24.com/offers/ford-ecosport-ford-ecosport-diesel-47e11485-8f53-477a-a8f9-f0021aeafe27",
+    "price": "€ 5,9001",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/47e11485-8f53-477a-a8f9-f0021aeafe27_3be01710-6b7c-468d-9f5e-008cc79906f2.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/47e11485-8f53-477a-a8f9-f0021aeafe27_52a6d630-ad99-4d1f-a315-b718785869e6.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/47e11485-8f53-477a-a8f9-f0021aeafe27_7d23f281-e84f-4cbb-b025-a6a93e80906b.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/47e11485-8f53-477a-a8f9-f0021aeafe27_96ab9828-6670-452f-944a-53e3c1b96c10.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/47e11485-8f53-477a-a8f9-f0021aeafe27_e12d3caf-71d4-47b8-b860-18b6e006a85f.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/47e11485-8f53-477a-a8f9-f0021aeafe27_de3f3dbf-a173-4596-bcb7-89d26cf87243.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/47e11485-8f53-477a-a8f9-f0021aeafe27_a2a94c76-8645-4b3d-b2d5-0ecb934882ca.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/47e11485-8f53-477a-a8f9-f0021aeafe27_82d48a9e-fd05-4725-9428-51e26d5916aa.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/47e11485-8f53-477a-a8f9-f0021aeafe27_14fe6293-6d52-4f27-a550-cded3eb8e0e3.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Off-Road/Pick-up",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Front Wheel Drive",
+      "Seats": "N/A",
+      "Doors": "5",
+      "Country_version": "N/A",
+      "Offer_Number": "10473230",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "125,000 km",
+      "First_registration": "05/2016",
+      "Previous_owner": "N/A",
+      "Full_service_history": "N/A",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "70 kW (95 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "N/A",
+      "Cylinders": "N/A",
+      "Gears": "N/A",
+      "Empty_weight": "N/A"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "N/A",
+      "Fuel_type": "Diesel",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "N/A"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "N/A",
+      "Paint": "Others",
+      "Manufacturer_colour": "N/A",
+      "Upholstery_colour": "N/A",
+      "Upholstery": "Other"
+    },
+    "seller_info": {
+      "company_name": "Duca Cars",
+      "contact_name": "Francesco .",
+      "location": "Str. del Carossio, 11,\n10147 Torino - To, IT",
+      "phone": [
+        "+39 011 - 19213493",
+        "+39 339 - 8807379"
+      ]
+    }
+  },
+  {
+    "car_title": "Peugeot 3008",
+    "car_subtitle": "Noleggio Lungo Termine 1.2 puretech t Allure",
+    "details_url": "https://www.autoscout24.com/offers/peugeot-3008-noleggio-lungo-termine-1-2-puretech-t-allure-gasoline-f1931210-a575-4d76-83e2-cbc173d75ee0",
+    "price": "€ 389",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/f1931210-a575-4d76-83e2-cbc173d75ee0_fed3a481-1d77-470d-9fd1-8fa62ef0a71b.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Off-Road/Pick-up",
+      "Vehicle_type": "Used",
+      "Drivetrain": "N/A",
+      "Seats": "5",
+      "Doors": "5",
+      "Country_version": "N/A",
+      "Offer_Number": "N/A",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "1 km",
+      "First_registration": "01/2025",
+      "Previous_owner": "N/A",
+      "Full_service_history": "N/A",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "96 kW (131 hp)",
+      "Gearbox": "Automatic",
+      "Engine_size": "1,199 cc",
+      "Cylinders": "3",
+      "Gears": "8",
+      "Empty_weight": "1,395 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "N/A",
+      "Fuel_type": "Gasoline",
+      "Fuel_consumption": "5.1 l/100 km (comb.)",
+      "CO₂_emissions": "117 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "N/A",
+      "Paint": "Others",
+      "Manufacturer_colour": "N/A",
+      "Upholstery_colour": "N/A",
+      "Upholstery": "N/A"
+    },
+    "seller_info": {
+      "company_name": "Aca Srl",
+      "contact_name": "Emiliano Cerri",
+      "location": "Via Antonio Vivaldi, 12,\n56022 Castelfranco Di Sotto - Pisa - PI, IT",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Subaru Legacy",
+    "car_subtitle": "2.0 GL Automatik",
+    "details_url": "https://www.autoscout24.com/offers/subaru-legacy-2-0-gl-automatik-gasoline-black-8edfab57-3038-4c7d-b6cc-1a6ef4a3e25c",
+    "price": "€ 699",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/8edfab57-3038-4c7d-b6cc-1a6ef4a3e25c_3d9a0d86-1939-4baa-9ce3-de626e61bc07.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/8edfab57-3038-4c7d-b6cc-1a6ef4a3e25c_ad519059-6d9c-4110-ba7d-53ecac53232f.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/8edfab57-3038-4c7d-b6cc-1a6ef4a3e25c_6e1883cb-61a9-4069-91f4-2da495e6d87d.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/8edfab57-3038-4c7d-b6cc-1a6ef4a3e25c_3a34d670-de31-40f3-8e60-8a329d447c35.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/8edfab57-3038-4c7d-b6cc-1a6ef4a3e25c_9b71a66a-56fc-4c14-8bad-4f33177cd8f1.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/8edfab57-3038-4c7d-b6cc-1a6ef4a3e25c_647c2dd5-d6d8-48e5-b544-592afffcada4.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/8edfab57-3038-4c7d-b6cc-1a6ef4a3e25c_6919279f-e840-428f-ba67-9a0f1f8429be.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/8edfab57-3038-4c7d-b6cc-1a6ef4a3e25c_b259b7c1-4f44-4cc0-81fa-afc21312724b.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/8edfab57-3038-4c7d-b6cc-1a6ef4a3e25c_97f5db44-f106-4d8d-b12a-6ca5698e01d2.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Sedan",
+      "Vehicle_type": "Used",
+      "Drivetrain": "N/A",
+      "Seats": "5",
+      "Doors": "4",
+      "Country_version": "N/A",
+      "Offer_Number": "1453",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "199,824 km",
+      "First_registration": "10/1998",
+      "Previous_owner": "N/A",
+      "Full_service_history": "N/A",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "85 kW (116 hp)",
+      "Gearbox": "Automatic",
+      "Engine_size": "1,994 cc",
+      "Cylinders": "N/A",
+      "Gears": "N/A",
+      "Empty_weight": "N/A"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 2",
+      "Fuel_type": "Regular/Benzine 91",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "N/A"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Black",
+      "Paint": "N/A",
+      "Manufacturer_colour": "N/A",
+      "Upholstery_colour": "Grey",
+      "Upholstery": "Cloth"
+    },
+    "seller_info": {
+      "company_name": "Autohändlerwelt GmbH",
+      "contact_name": "Daniel Nietzschmann",
+      "location": "Otto-Hahn-Straße 4,\n06796 Sandersdorf-Brehna, DE",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Audi Q8 e-tron",
+    "car_subtitle": "55 QUATTRO 408pk * 115KWh * S-LINE * MATRIX * CAM*",
+    "details_url": "https://www.autoscout24.com/offers/audi-q8-e-tron-55-quattro-408pk-115kwh-s-line-matrix-cam-electric-grey-26be4a06-9c65-4990-9f3b-f7c03c2eb5d0",
+    "price": "€ 60,9951",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/26be4a06-9c65-4990-9f3b-f7c03c2eb5d0_300a2278-addd-4aa7-8c88-4bfb3fc22c14.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/26be4a06-9c65-4990-9f3b-f7c03c2eb5d0_8e053712-6341-43ee-b4b8-c1b1ea2d669f.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/26be4a06-9c65-4990-9f3b-f7c03c2eb5d0_2bfe6e97-510d-4850-be09-d2f2f2bf57b5.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/26be4a06-9c65-4990-9f3b-f7c03c2eb5d0_16dfc867-7d0a-4dc5-ae58-f6dd0593fd52.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/26be4a06-9c65-4990-9f3b-f7c03c2eb5d0_7d0df842-2109-439a-bd15-23b165df9ad6.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/26be4a06-9c65-4990-9f3b-f7c03c2eb5d0_a0796538-97e5-44ba-aa2d-14fb0b6c3151.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/26be4a06-9c65-4990-9f3b-f7c03c2eb5d0_0d106fef-7181-409b-9370-b075d73f4d75.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/26be4a06-9c65-4990-9f3b-f7c03c2eb5d0_b51ebef4-b337-48ef-b634-68fb8dfa4f6a.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/26be4a06-9c65-4990-9f3b-f7c03c2eb5d0_f64b5b76-15da-404b-a6e1-e20852897301.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Off-Road/Pick-up",
+      "Vehicle_type": "Used",
+      "Drivetrain": "4WD",
+      "Seats": "5",
+      "Doors": "5",
+      "Country_version": "Belgium",
+      "Offer_Number": "N/A",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "15,709 km",
+      "First_registration": "07/2023",
+      "Previous_owner": "1",
+      "Full_service_history": "Yes",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "300 kW (408 hp)",
+      "Gearbox": "Automatic",
+      "Engine_size": "N/A",
+      "Cylinders": "N/A",
+      "Gears": "N/A",
+      "Empty_weight": "3,180 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 6d",
+      "Fuel_type": "N/A",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "0 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Grey",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "AUDI EXCLUSIVE PLASMA BLAUW !!",
+      "Upholstery_colour": "Black",
+      "Upholstery": "Part leather"
+    },
+    "seller_info": {
+      "company_name": "Garage Vriens Bvba",
+      "contact_name": "Yves Vriens",
+      "location": "Turfputten 2,\n2250 Olen, BE",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Opel Astra",
+    "car_subtitle": "Astra 1.2 Turbo Start/Stop Business Elegance",
+    "details_url": "https://www.autoscout24.com/offers/opel-astra-astra-1-2-turbo-start-stop-business-elegance-gasoline-black-5421a915-0955-4cfb-992b-5c3aa8a1c2bc",
+    "price": "€ 5,900",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/5421a915-0955-4cfb-992b-5c3aa8a1c2bc_37fa21fe-9dfe-4b90-b107-d8cc0510f7f1.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/5421a915-0955-4cfb-992b-5c3aa8a1c2bc_ba487e3e-2521-468e-b704-67bcd98bd36b.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/5421a915-0955-4cfb-992b-5c3aa8a1c2bc_c9296e0c-cb67-469a-828b-1b6d32260fa3.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/5421a915-0955-4cfb-992b-5c3aa8a1c2bc_527497c6-7915-4158-9054-9ecc69d0f3fc.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/5421a915-0955-4cfb-992b-5c3aa8a1c2bc_24ff7178-c200-4c28-bfb8-56c57b6c239d.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/5421a915-0955-4cfb-992b-5c3aa8a1c2bc_6d241d76-0250-411c-bb17-fe8864360d46.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/5421a915-0955-4cfb-992b-5c3aa8a1c2bc_99817973-e1b3-4f44-92c4-aef9d1d8b8d9.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/5421a915-0955-4cfb-992b-5c3aa8a1c2bc_c09fc16b-8461-4fad-b32d-d229673ac408.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/5421a915-0955-4cfb-992b-5c3aa8a1c2bc_754ee61c-68b1-4ed5-9243-a385ece120a1.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/5421a915-0955-4cfb-992b-5c3aa8a1c2bc_6e305698-db18-4983-a3c4-7d3f1f437aab.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Sedan",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Front Wheel Drive",
+      "Seats": "5",
+      "Doors": "5",
+      "Country_version": "Belgium",
+      "Offer_Number": "N/A",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "190,000 km",
+      "First_registration": "10/2020",
+      "Previous_owner": "1",
+      "Full_service_history": "Yes",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "96 kW (131 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,199 cc",
+      "Cylinders": "4",
+      "Gears": "6",
+      "Empty_weight": "1,805 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 6d",
+      "Fuel_type": "Gasoline",
+      "Fuel_consumption": "4.3 l/100 km (comb.)",
+      "CO₂_emissions": "N/A"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Black",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "N/A",
+      "Upholstery_colour": "Black",
+      "Upholstery": "Cloth"
+    },
+    "seller_info": {
+      "company_name": "INI CARS",
+      "contact_name": "INI Cars",
+      "location": "8A De Tilbourgstraat,\n1981 Zemst, BE",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Jaguar X-Type",
+    "car_subtitle": "Estate 2.0 D Executive",
+    "details_url": "https://www.autoscout24.com/offers/jaguar-x-type-estate-2-0-d-executive-diesel-black-edfeb236-baf6-4ced-8feb-7dc7652cd994",
+    "price": "€ 990",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/edfeb236-baf6-4ced-8feb-7dc7652cd994_88d5de59-bbeb-4bb1-b49c-c6a2fe8e3740.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/edfeb236-baf6-4ced-8feb-7dc7652cd994_e0d7ef16-dc58-4e3c-b256-89bf9f2d4ef4.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/edfeb236-baf6-4ced-8feb-7dc7652cd994_9bf408ab-c1ca-4800-9b3d-eebc5c13e793.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/edfeb236-baf6-4ced-8feb-7dc7652cd994_a79480f2-a513-4b23-a26e-207657331715.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/edfeb236-baf6-4ced-8feb-7dc7652cd994_1fbedbab-1f3a-455a-ac06-d8462955e683.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/edfeb236-baf6-4ced-8feb-7dc7652cd994_89178006-9874-4229-8fbd-b127d04f663a.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/edfeb236-baf6-4ced-8feb-7dc7652cd994_8049e641-9e58-4a35-8c86-4a890f4d7854.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/edfeb236-baf6-4ced-8feb-7dc7652cd994_51481974-1922-41fa-8c8d-298f30fbae1a.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/edfeb236-baf6-4ced-8feb-7dc7652cd994_08b5c34a-4fb1-47e2-a046-ed020a68defe.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Station wagon",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Front Wheel Drive",
+      "Seats": "5",
+      "Doors": "4",
+      "Country_version": "N/A",
+      "Offer_Number": "504",
+      "Model_Code": "2051/AAT"
+    },
+    "Vehicle_History": {
+      "Mileage": "140,000 km",
+      "First_registration": "07/2004",
+      "Previous_owner": "3",
+      "Full_service_history": "N/A",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "96 kW (131 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,998 cc",
+      "Cylinders": "4",
+      "Gears": "N/A",
+      "Empty_weight": "1,559 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 3",
+      "Fuel_type": "Diesel",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "154 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Black",
+      "Paint": "N/A",
+      "Manufacturer_colour": "Ebony .",
+      "Upholstery_colour": "N/A",
+      "Upholstery": "Full leather"
+    },
+    "seller_info": {
+      "company_name": "Öz Automobile GmbH",
+      "contact_name": "Ihre Verkausteam",
+      "location": "Siemensstr. 2,\n41469 Neuss, DE",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "BMW 318",
+    "car_subtitle": "Baureihe 3 Compact 318ti",
+    "details_url": "https://www.autoscout24.com/offers/bmw-318-baureihe-3-compact-318ti-gasoline-grey-ab6ab377-5d44-4109-a295-5ec730bc9cfe",
+    "price": "€ 2,500",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/ab6ab377-5d44-4109-a295-5ec730bc9cfe_d296508e-e177-4155-a7dc-a823b7941751.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/ab6ab377-5d44-4109-a295-5ec730bc9cfe_4e052c5f-5b9a-4fe4-b3d6-fe4eeec70efa.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/ab6ab377-5d44-4109-a295-5ec730bc9cfe_8efe0716-a46c-4b8e-bcba-e5ab5124b0d4.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/ab6ab377-5d44-4109-a295-5ec730bc9cfe_82180e80-aaf8-4984-9906-19cadc861f99.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/ab6ab377-5d44-4109-a295-5ec730bc9cfe_3f4c5611-6536-44c0-a8fc-45c42f5a5f3a.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/ab6ab377-5d44-4109-a295-5ec730bc9cfe_81d212d9-bb7f-471d-bd57-4b05c35b2f5a.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/ab6ab377-5d44-4109-a295-5ec730bc9cfe_f0b53efb-74b8-40ce-ada7-687331dc723c.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/ab6ab377-5d44-4109-a295-5ec730bc9cfe_5a487bc9-c9c7-4a52-8570-0af377e89541.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/ab6ab377-5d44-4109-a295-5ec730bc9cfe_5c613d22-434a-48e9-bcb9-0facb5ce3498.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Sedan",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Rear Wheel Drive",
+      "Seats": "5",
+      "Doors": "2",
+      "Country_version": "N/A",
+      "Offer_Number": "2025-197",
+      "Model_Code": "0005/721"
+    },
+    "Vehicle_History": {
+      "Mileage": "155,000 km",
+      "First_registration": "05/2004",
+      "Previous_owner": "N/A",
+      "Full_service_history": "N/A",
+      "General_inspection": "11/2026"
+    },
+    "Technical_Data": {
+      "Power": "105 kW (143 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,995 cc",
+      "Cylinders": "4",
+      "Gears": "N/A",
+      "Empty_weight": "1,375 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "N/A",
+      "Fuel_type": "Gasoline",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "171 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Grey",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "SILBERGRAU",
+      "Upholstery_colour": "Black",
+      "Upholstery": "Cloth"
+    },
+    "seller_info": {
+      "company_name": "TRC Automobile GmbH",
+      "contact_name": "Mujib Habiby",
+      "location": "Langenharmer Weg 128,\n22844 Norderstedt, DE",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Volvo XC70",
+    "car_subtitle": "2.4 D5 AWD Automaat Ocean Race Schuifdak Leer",
+    "details_url": "https://www.autoscout24.com/offers/volvo-xc70-2-4-d5-awd-automaat-ocean-race-schuifdak-leer-diesel-blue-1fc850ea-ca67-4516-9f97-647090d48238",
+    "price": "€ 2,999",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/1fc850ea-ca67-4516-9f97-647090d48238_dfe94b8b-103e-41da-b9ab-718e96502d14.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/1fc850ea-ca67-4516-9f97-647090d48238_e01825b1-db50-4a5c-a420-d73a8131f065.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/1fc850ea-ca67-4516-9f97-647090d48238_67d504f8-8f6e-4a3f-9492-e3bcb96526a3.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/1fc850ea-ca67-4516-9f97-647090d48238_9134f4c3-5a8b-4806-9318-2f8dd4353582.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/1fc850ea-ca67-4516-9f97-647090d48238_2b1a263f-efb1-4f0f-a955-4daa97e593ce.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/1fc850ea-ca67-4516-9f97-647090d48238_06528e64-4d8e-47e0-bd01-a63e437a1f3f.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/1fc850ea-ca67-4516-9f97-647090d48238_05ab50a3-f98c-4913-8d81-78d4a3a73705.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/1fc850ea-ca67-4516-9f97-647090d48238_f62e644a-473f-40ae-ba32-c82d7f0381e5.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/1fc850ea-ca67-4516-9f97-647090d48238_4b9c8d64-da16-4233-8c65-83175c831605.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Station wagon",
+      "Vehicle_type": "Used",
+      "Drivetrain": "4WD",
+      "Seats": "5",
+      "Doors": "5",
+      "Country_version": "N/A",
+      "Offer_Number": "L-494-JP",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "434,211 km",
+      "First_registration": "11/2005",
+      "Previous_owner": "N/A",
+      "Full_service_history": "Yes",
+      "General_inspection": "12/2026"
+    },
+    "Technical_Data": {
+      "Power": "136 kW (185 hp)",
+      "Gearbox": "Automatic",
+      "Engine_size": "2,401 cc",
+      "Cylinders": "5",
+      "Gears": "N/A",
+      "Empty_weight": "1,694 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 4",
+      "Fuel_type": "Diesel",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "224 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Blue",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "Blauw metallic",
+      "Upholstery_colour": "N/A",
+      "Upholstery": "Full leather"
+    },
+    "seller_info": {
+      "company_name": "Dennis Automotive",
+      "contact_name": "Dennis Aldemir",
+      "location": "Dijkhuizerweg 7,\n8161 NT EPE, NL",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Opel Corsa",
+    "car_subtitle": "1.2 EcoFlex Selection | 5 Deurs | CruiseControl |",
+    "details_url": "https://www.autoscout24.com/offers/opel-corsa-1-2-ecoflex-selection-5-deurs-cruisecontrol-gasoline-grey-463b8f6c-91ca-4672-8281-f8e5917e8f49",
+    "price": "€ 3,885",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/463b8f6c-91ca-4672-8281-f8e5917e8f49_1f95bef5-5a84-48ab-bb22-3eee1841302d.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/463b8f6c-91ca-4672-8281-f8e5917e8f49_2b86b795-e4c8-4efb-a22c-9ab071be065e.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/463b8f6c-91ca-4672-8281-f8e5917e8f49_5ab5f158-d2cc-43bd-90b7-98ca636ccc05.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/463b8f6c-91ca-4672-8281-f8e5917e8f49_42e83db5-9024-473b-b1ec-8c2376e32598.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/463b8f6c-91ca-4672-8281-f8e5917e8f49_f8727df7-2e08-47a6-b6c6-83e152c99b7e.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/463b8f6c-91ca-4672-8281-f8e5917e8f49_ee782aba-f2a7-4dd6-838a-58906efa080e.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/463b8f6c-91ca-4672-8281-f8e5917e8f49_b38ef4db-da56-4118-a440-a003ff898779.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/463b8f6c-91ca-4672-8281-f8e5917e8f49_2da40007-5103-44ed-9b86-16e1215ac9cb.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/463b8f6c-91ca-4672-8281-f8e5917e8f49_7b7200c6-2c7d-4daf-be83-5a19327c69ac.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/463b8f6c-91ca-4672-8281-f8e5917e8f49_26cbe105-8099-4858-8f3a-f1bee84ee90e.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Compact",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Front Wheel Drive",
+      "Seats": "5",
+      "Doors": "5",
+      "Country_version": "N/A",
+      "Offer_Number": "HFP-82-D",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "84,300 km",
+      "First_registration": "02/2011",
+      "Previous_owner": "N/A",
+      "Full_service_history": "N/A",
+      "General_inspection": "02/2026"
+    },
+    "Technical_Data": {
+      "Power": "51 kW (69 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,229 cc",
+      "Cylinders": "4",
+      "Gears": "N/A",
+      "Empty_weight": "1,059 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 5",
+      "Fuel_type": "Gasoline",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "124 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Grey",
+      "Paint": "N/A",
+      "Manufacturer_colour": "Szary",
+      "Upholstery_colour": "N/A",
+      "Upholstery": "N/A"
+    },
+    "seller_info": {
+      "company_name": "van der Kolk auto's",
+      "contact_name": "Ian van der Kolk",
+      "location": "De Grift 4,\n7711 EP NIEUWLEUSEN, NL",
+      "phone": [
+        "+31 (0)6 - 15218890"
+      ]
+    }
+  },
+  {
+    "car_title": "Ford Focus",
+    "car_subtitle": "Turnier Style + 1.8",
+    "details_url": "https://www.autoscout24.com/offers/ford-focus-turnier-style-1-8-gasoline-silver-097c1f25-35ed-4da9-9709-1f6ff4544c73",
+    "price": "€ 1,499",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/097c1f25-35ed-4da9-9709-1f6ff4544c73_25028094-c908-4797-a7b5-d4dc9467aa58.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/097c1f25-35ed-4da9-9709-1f6ff4544c73_79823fa0-4570-4926-b277-5bdfdac09bbc.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/097c1f25-35ed-4da9-9709-1f6ff4544c73_914f1cd0-acf1-4824-add4-eef9c4e90d0f.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/097c1f25-35ed-4da9-9709-1f6ff4544c73_3063ef8f-de7e-4d03-b506-8ed9981acb0d.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/097c1f25-35ed-4da9-9709-1f6ff4544c73_57c0028a-f7ae-44e9-aab7-715b6faa36f8.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/097c1f25-35ed-4da9-9709-1f6ff4544c73_2b6e5c3a-eb1d-4b78-8951-fe2768db4b92.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/097c1f25-35ed-4da9-9709-1f6ff4544c73_400f1d44-6bb4-4f88-a186-714cd56806b8.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/097c1f25-35ed-4da9-9709-1f6ff4544c73_23234d20-c5ab-48b7-98ed-c15bfbc578a1.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/097c1f25-35ed-4da9-9709-1f6ff4544c73_58fbc5ed-19bb-4320-836d-5cb75afb63b6.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Station wagon",
+      "Vehicle_type": "Used",
+      "Drivetrain": "N/A",
+      "Seats": "5",
+      "Doors": "4",
+      "Country_version": "N/A",
+      "Offer_Number": "0263",
+      "Model_Code": "8566/ABU"
+    },
+    "Vehicle_History": {
+      "Mileage": "134,214 km",
+      "First_registration": "12/2009",
+      "Previous_owner": "N/A",
+      "Full_service_history": "N/A",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "92 kW (125 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,798 cc",
+      "Cylinders": "N/A",
+      "Gears": "N/A",
+      "Empty_weight": "N/A"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 4",
+      "Fuel_type": "Regular/Benzine 91",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "N/A"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Silver",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "N/A",
+      "Upholstery_colour": "Grey",
+      "Upholstery": "Cloth"
+    },
+    "seller_info": {
+      "company_name": "Autohändlerwelt GmbH",
+      "contact_name": "Daniel Nietzschmann",
+      "location": "Otto-Hahn-Straße 4,\n06796 Sandersdorf-Brehna, DE",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Opel Corsa",
+    "car_subtitle": "1.2-16V Enjoy Climatecontrol 5 Drs Lm Velgen Trekh",
+    "details_url": "https://www.autoscout24.com/offers/opel-corsa-1-2-16v-enjoy-climatecontrol-5-drs-lm-velgen-trekh-gasoline-blue-3e6b5e11-2d35-4e16-ba9b-7c962e62e26e",
+    "price": "€ 1,250",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/3e6b5e11-2d35-4e16-ba9b-7c962e62e26e_77b29530-6037-49b5-bd19-28bfb51399f6.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/3e6b5e11-2d35-4e16-ba9b-7c962e62e26e_c8f5a6ba-34e1-4da6-86ca-bb6bbc07dd09.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/3e6b5e11-2d35-4e16-ba9b-7c962e62e26e_4441f7bc-150b-471e-b6f1-a2ea6dbae33d.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/3e6b5e11-2d35-4e16-ba9b-7c962e62e26e_a17ba111-13a6-4b43-b688-69c18bc00c50.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/3e6b5e11-2d35-4e16-ba9b-7c962e62e26e_3c148271-bf7f-4cb4-9ce2-d62a26991b16.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/3e6b5e11-2d35-4e16-ba9b-7c962e62e26e_e902716e-528a-40fe-acbe-861fd476b910.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/3e6b5e11-2d35-4e16-ba9b-7c962e62e26e_4087dcbe-ad89-4585-8bad-e417f57dcbfb.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/3e6b5e11-2d35-4e16-ba9b-7c962e62e26e_06be53ff-b36e-4caa-8f9e-25d7b3bb5ed1.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/3e6b5e11-2d35-4e16-ba9b-7c962e62e26e_e885c056-f835-492e-8ae7-a0cc3f3693a4.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Compact",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Front Wheel Drive",
+      "Seats": "5",
+      "Doors": "5",
+      "Country_version": "N/A",
+      "Offer_Number": "19-XR-RK",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "273,579 km",
+      "First_registration": "08/2007",
+      "Previous_owner": "3",
+      "Full_service_history": "N/A",
+      "General_inspection": "02/2026"
+    },
+    "Technical_Data": {
+      "Power": "60 kW (82 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,229 cc",
+      "Cylinders": "4",
+      "Gears": "5",
+      "Empty_weight": "1,060 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 4",
+      "Fuel_type": "Gasoline",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "139 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Blue",
+      "Paint": "N/A",
+      "Manufacturer_colour": "Blauw",
+      "Upholstery_colour": "N/A",
+      "Upholstery": "N/A"
+    },
+    "seller_info": {
+      "company_name": "STM Autos",
+      "contact_name": "Andre Hoegen",
+      "location": "Engweg 23a,\n3882 AJ PUTTEN, NL",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Fiat Punto",
+    "car_subtitle": "1.2i 8v Junior Team Sergio Tacchini",
+    "details_url": "https://www.autoscout24.com/offers/fiat-punto-1-2i-8v-junior-team-sergio-tacchini-gasoline-grey-8596f60c-4903-4cf4-9cf0-8a094ed158a2",
+    "price": "€ 850",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/8596f60c-4903-4cf4-9cf0-8a094ed158a2_0520147e-d2b9-4020-bb6b-ffd6ada4be0e.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/8596f60c-4903-4cf4-9cf0-8a094ed158a2_e62bf915-4c50-40bc-ad12-18fef26091fe.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/8596f60c-4903-4cf4-9cf0-8a094ed158a2_89ec39c5-6976-4468-8ab6-19d9751bee81.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/8596f60c-4903-4cf4-9cf0-8a094ed158a2_c832ea05-035d-46d8-92e9-8b6ce4ccd45d.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/8596f60c-4903-4cf4-9cf0-8a094ed158a2_0949caab-b936-45b7-bd0c-c66b93c8a4f7.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/8596f60c-4903-4cf4-9cf0-8a094ed158a2_cd0f40c0-a0b4-4801-85a7-a5817b6c71d6.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Sedan",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Front Wheel Drive",
+      "Seats": "5",
+      "Doors": "3",
+      "Country_version": "N/A",
+      "Offer_Number": "N/A",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "160,000 km",
+      "First_registration": "01/2003",
+      "Previous_owner": "2",
+      "Full_service_history": "N/A",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "44 kW (60 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,242 cc",
+      "Cylinders": "4",
+      "Gears": "N/A",
+      "Empty_weight": "1,370 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 3",
+      "Fuel_type": "Gasoline",
+      "Fuel_consumption": "5.7 l/100 km (comb.)",
+      "CO₂_emissions": "N/A"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Grey",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "N/A",
+      "Upholstery_colour": "Grey",
+      "Upholstery": "Cloth"
+    },
+    "seller_info": {
+      "company_name": "PP Auto",
+      "contact_name": "Pierino Paglierini",
+      "location": "42 Rue des Chênes,\n7333 Tertre, BE",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "BMW X3",
+    "car_subtitle": "X3 xdrive20d Eletta",
+    "details_url": "https://www.autoscout24.com/offers/bmw-x3-x3-xdrive20d-eletta-diesel-grey-542ccbe1-850c-41bf-b363-c3ed10331e6f",
+    "price": "€ 6,900",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/542ccbe1-850c-41bf-b363-c3ed10331e6f_ea1ca4be-128b-4cef-9510-f8e8ab02a9ba.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/542ccbe1-850c-41bf-b363-c3ed10331e6f_27c172d2-c901-45cf-bf0d-91b2b55577f1.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/542ccbe1-850c-41bf-b363-c3ed10331e6f_e1fa98c2-09ec-426a-9831-10598d84380c.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/542ccbe1-850c-41bf-b363-c3ed10331e6f_192ed70a-f4d4-49c4-96a0-ef306bc360d3.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/542ccbe1-850c-41bf-b363-c3ed10331e6f_48d624a1-6913-42f8-9e45-b7482391f474.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/542ccbe1-850c-41bf-b363-c3ed10331e6f_66fb48a1-1774-4b94-bfed-628f97cfd150.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/542ccbe1-850c-41bf-b363-c3ed10331e6f_264aa86d-b2ad-43e9-8faa-877642bcb76f.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/542ccbe1-850c-41bf-b363-c3ed10331e6f_9fa2f4ae-5d7b-4d00-8a1f-14b71fa01cbd.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/542ccbe1-850c-41bf-b363-c3ed10331e6f_7cb978d4-880b-4799-8189-902868913941.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Off-Road/Pick-up",
+      "Vehicle_type": "Used",
+      "Drivetrain": "4WD",
+      "Seats": "5",
+      "Doors": "5",
+      "Country_version": "N/A",
+      "Offer_Number": "N/A",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "273,000 km",
+      "First_registration": "02/2013",
+      "Previous_owner": "N/A",
+      "Full_service_history": "N/A",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "135 kW (184 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,995 cc",
+      "Cylinders": "4",
+      "Gears": "6",
+      "Empty_weight": "1,790 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 5",
+      "Fuel_type": "Diesel",
+      "Fuel_consumption": "5.6 l/100 km (comb.)",
+      "CO₂_emissions": "N/A"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Grey",
+      "Paint": "N/A",
+      "Manufacturer_colour": "N/A",
+      "Upholstery_colour": "Grey",
+      "Upholstery": "Cloth"
+    },
+    "seller_info": {
+      "company_name": "Suv&City Car",
+      "contact_name": "AMEDEO/ALESSANDRO Amedeo / Alessandro",
+      "location": "Via Provinciale, 31,\n24040 Lallio - Bergamo - BG, IT",
+      "phone": [
+        "+39 320 - 8440980"
+      ]
+    }
+  },
+  {
+    "car_title": "Fiat Qubo",
+    "car_subtitle": "Qubo 1.3 mjt 16v Trekking",
+    "details_url": "https://www.autoscout24.com/offers/fiat-qubo-qubo-1-3-mjt-16v-trekking-diesel-brown-181c3bcb-bdae-424b-80d0-3c71816ca3b5",
+    "price": "€ 2,999",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/181c3bcb-bdae-424b-80d0-3c71816ca3b5_f8a420dc-cdf1-44aa-bbfa-f8ac5bf85010.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/181c3bcb-bdae-424b-80d0-3c71816ca3b5_333855aa-295e-48d1-9b70-52b468019c05.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/181c3bcb-bdae-424b-80d0-3c71816ca3b5_ac740ae7-2865-4cbb-97d9-82c349cf0416.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/181c3bcb-bdae-424b-80d0-3c71816ca3b5_41e3e5aa-ef67-424b-99e9-d4e8a5210ac4.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/181c3bcb-bdae-424b-80d0-3c71816ca3b5_64374fff-f549-4521-bc27-452aba2da563.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/181c3bcb-bdae-424b-80d0-3c71816ca3b5_d0c767d1-e76b-407d-9786-7f9010a6a9f0.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/181c3bcb-bdae-424b-80d0-3c71816ca3b5_6f523197-8f72-406a-864b-dd6988a75cd1.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/181c3bcb-bdae-424b-80d0-3c71816ca3b5_e1ab37b0-face-42d2-a5a2-0509771830c7.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/181c3bcb-bdae-424b-80d0-3c71816ca3b5_4b85119a-fd5c-4ec1-aaff-4fa46df197cf.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Van",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Front Wheel Drive",
+      "Seats": "5",
+      "Doors": "5",
+      "Country_version": "N/A",
+      "Offer_Number": "N/A",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "210,000 km",
+      "First_registration": "03/2010",
+      "Previous_owner": "1",
+      "Full_service_history": "N/A",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "55 kW (75 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,248 cc",
+      "Cylinders": "4",
+      "Gears": "5",
+      "Empty_weight": "1,275 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 4",
+      "Fuel_type": "Diesel",
+      "Fuel_consumption": "4.5 l/100 km (comb.)",
+      "CO₂_emissions": "N/A"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Brown",
+      "Paint": "N/A",
+      "Manufacturer_colour": "N/A",
+      "Upholstery_colour": "Black",
+      "Upholstery": "Cloth"
+    },
+    "seller_info": {
+      "company_name": "Giannini & G. srls",
+      "contact_name": "Piero",
+      "location": "Via Pierluigi da Palestrina, 34,\n41122 Modena - MO, IT",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Audi A4",
+    "car_subtitle": "2.0 TFSI Avant quattro S line",
+    "details_url": "https://www.autoscout24.com/offers/audi-a4-2-0-tfsi-avant-quattro-s-line-gasoline-black-d567c9d6-6fcf-4806-9006-35690bf04e73",
+    "price": "€ 8,950",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/d567c9d6-6fcf-4806-9006-35690bf04e73_128428fd-28a8-42bd-9f04-36375a78bfd8.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/d567c9d6-6fcf-4806-9006-35690bf04e73_843a9c7f-b8dc-45e0-b7f5-0696d659cda0.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/d567c9d6-6fcf-4806-9006-35690bf04e73_30355d32-7980-46e8-b6e9-dce5757fc909.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/d567c9d6-6fcf-4806-9006-35690bf04e73_b8a1f60b-d7bb-483d-9545-08fc00e5294f.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/d567c9d6-6fcf-4806-9006-35690bf04e73_e2aa1075-cf56-45bd-ab22-6955348aa18e.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/d567c9d6-6fcf-4806-9006-35690bf04e73_49d9cdfc-ceab-4480-9558-405b73d86859.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/d567c9d6-6fcf-4806-9006-35690bf04e73_023e4815-812f-43a4-9bad-9609b9a9a9ac.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/d567c9d6-6fcf-4806-9006-35690bf04e73_4aeb796e-ff39-4bfc-a741-959d1cf7f158.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/d567c9d6-6fcf-4806-9006-35690bf04e73_fcb0c63f-531c-4c29-a709-ab8ee4586f10.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Station wagon",
+      "Vehicle_type": "Used",
+      "Drivetrain": "4WD",
+      "Seats": "5",
+      "Doors": "4",
+      "Country_version": "N/A",
+      "Offer_Number": "035501",
+      "Model_Code": "0588/AHR"
+    },
+    "Vehicle_History": {
+      "Mileage": "157,860 km",
+      "First_registration": "07/2012",
+      "Previous_owner": "N/A",
+      "Full_service_history": "Yes",
+      "General_inspection": "03/2027"
+    },
+    "Technical_Data": {
+      "Power": "155 kW (211 hp)",
+      "Gearbox": "Automatic",
+      "Engine_size": "1,984 cc",
+      "Cylinders": "N/A",
+      "Gears": "N/A",
+      "Empty_weight": "1,650 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 5",
+      "Fuel_type": "Gasoline",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "N/A"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Black",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "Schwarz",
+      "Upholstery_colour": "Beige",
+      "Upholstery": "Full leather"
+    },
+    "seller_info": {
+      "company_name": "Autohaus Maletzki GmbH",
+      "contact_name": "Diana Semen",
+      "location": "Plauer Landstraße 22,\n14772 Brandenburg an der Havel, DE",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Renault Clio",
+    "car_subtitle": "1.2i Ice-Watch / 1er Propretaire / Eerste Eig.",
+    "details_url": "https://www.autoscout24.com/offers/renault-clio-1-2i-ice-watch-1er-propretaire-eerste-eig-gasoline-a3225578-fb3d-4a48-addf-abbdd14b6199",
+    "price": "€ 4,499",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/a3225578-fb3d-4a48-addf-abbdd14b6199_3b7fc63d-9e09-427e-b50c-c1828f8fb47e.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/a3225578-fb3d-4a48-addf-abbdd14b6199_e0a918a2-2045-4cf0-96fa-16e72b4d38fd.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/a3225578-fb3d-4a48-addf-abbdd14b6199_a2224a80-96c0-4e42-a700-0e3638b4f695.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/a3225578-fb3d-4a48-addf-abbdd14b6199_ac72358b-0691-4718-96c0-70cb56bacd46.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/a3225578-fb3d-4a48-addf-abbdd14b6199_9c6ecfc4-9ab4-4d1c-bd1a-bf567273cf29.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/a3225578-fb3d-4a48-addf-abbdd14b6199_578e9e65-c105-4e58-afdc-a6f723b65b60.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/a3225578-fb3d-4a48-addf-abbdd14b6199_8a41df39-46b2-402c-b1d5-acef96c93418.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/a3225578-fb3d-4a48-addf-abbdd14b6199_2a2a2e34-ebec-473c-a15f-5277a1008a19.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/a3225578-fb3d-4a48-addf-abbdd14b6199_c4608216-d936-43a4-9be9-574fdc0b75f6.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Sedan",
+      "Vehicle_type": "Used",
+      "Drivetrain": "N/A",
+      "Seats": "5",
+      "Doors": "5",
+      "Country_version": "N/A",
+      "Offer_Number": "N/A",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "60,000 km",
+      "First_registration": "03/2012",
+      "Previous_owner": "N/A",
+      "Full_service_history": "N/A",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "55 kW (75 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,149 cc",
+      "Cylinders": "4",
+      "Gears": "N/A",
+      "Empty_weight": "1,580 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 5",
+      "Fuel_type": "Gasoline",
+      "Fuel_consumption": "5.8 l/100 km (comb.)",
+      "CO₂_emissions": "N/A"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "N/A",
+      "Paint": "N/A",
+      "Manufacturer_colour": "N/A",
+      "Upholstery_colour": "N/A",
+      "Upholstery": "N/A"
+    },
+    "seller_info": {
+      "company_name": "S.N. Cars",
+      "contact_name": "s Nasrat",
+      "location": "Romeinsesteenweg 358,\n1853 Grimbergen, BE",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Audi e-tron",
+    "car_subtitle": "E-Tron 300 kWh Quattro Advanced 55//TOIT PANO//LED",
+    "details_url": "https://www.autoscout24.com/offers/audi-e-tron-e-tron-300-kwh-quattro-advanced-55-toit-pano-led-electric-blue-ee0834da-534b-4a85-a28d-0bd2b2bd8112",
+    "price": "€ 19,990",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/ee0834da-534b-4a85-a28d-0bd2b2bd8112_a8a4e659-d62e-40fe-9b1e-1ae5d9927656.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/ee0834da-534b-4a85-a28d-0bd2b2bd8112_7af18b54-c131-48f0-9bf6-d6ed9957230e.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/ee0834da-534b-4a85-a28d-0bd2b2bd8112_233cf9cc-5413-4723-b468-94f4a5dc2939.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/ee0834da-534b-4a85-a28d-0bd2b2bd8112_b12f10ca-c1b1-4331-9202-74b232b9dd00.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/ee0834da-534b-4a85-a28d-0bd2b2bd8112_87da22ed-48c2-4be5-ba60-b622a6830453.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/ee0834da-534b-4a85-a28d-0bd2b2bd8112_cc337a17-a22f-45be-b551-ec43a958062c.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/ee0834da-534b-4a85-a28d-0bd2b2bd8112_70506369-6edb-4310-8be0-5d55deff34ff.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/ee0834da-534b-4a85-a28d-0bd2b2bd8112_071b93e2-5447-45ab-a1fc-7850524c5e24.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/ee0834da-534b-4a85-a28d-0bd2b2bd8112_79b87944-c39d-46af-bd78-d0acc7f9d574.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Off-Road/Pick-up",
+      "Vehicle_type": "Used",
+      "Drivetrain": "N/A",
+      "Seats": "5",
+      "Doors": "5",
+      "Country_version": "Belgium",
+      "Offer_Number": "N/A",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "145,000 km",
+      "First_registration": "07/2019",
+      "Previous_owner": "1",
+      "Full_service_history": "Yes",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "300 kW (408 hp)",
+      "Gearbox": "Automatic",
+      "Engine_size": "N/A",
+      "Cylinders": "N/A",
+      "Gears": "N/A",
+      "Empty_weight": "3,150 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "N/A",
+      "Fuel_type": "N/A",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "0 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Blue",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "N/A",
+      "Upholstery_colour": "Beige",
+      "Upholstery": "Full leather"
+    },
+    "seller_info": {
+      "company_name": "HD Auto Saint-Ghislain",
+      "contact_name": "HD Auto Saint-Ghislain",
+      "location": "Rue des Sas 84,\n7330 Saint-Ghislain, BE",
+      "phone": [
+        "+32 (0)470 - 736056",
+        "+32 (0)485 - 198856"
+      ]
+    }
+  },
+  {
+    "car_title": "SEAT Ibiza",
+    "car_subtitle": "1.2i Reference CLIM",
+    "details_url": "https://www.autoscout24.com/offers/seat-ibiza-1-2i-reference-clim-gasoline-white-91075ff1-ca04-4943-998f-e2ec7540e3f2",
+    "price": "€ 4,600",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/91075ff1-ca04-4943-998f-e2ec7540e3f2_81c903e7-aabf-4a35-912c-6a5d3afc388d.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/91075ff1-ca04-4943-998f-e2ec7540e3f2_4e3329b5-f18a-4583-9b0d-8a3cf1cea400.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/91075ff1-ca04-4943-998f-e2ec7540e3f2_e9ff964b-40af-46c9-b084-4f003e3ac581.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/91075ff1-ca04-4943-998f-e2ec7540e3f2_44970808-63d5-411f-b057-33d6f11bccf2.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/91075ff1-ca04-4943-998f-e2ec7540e3f2_f02310d8-e451-4c40-a5e2-98fdc1f680cd.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/91075ff1-ca04-4943-998f-e2ec7540e3f2_d3cfa6e7-fed2-4e42-b97a-7be2aef24524.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/91075ff1-ca04-4943-998f-e2ec7540e3f2_d1f1aee4-46b8-4dc0-9da1-b9607fb2fc84.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Sedan",
+      "Vehicle_type": "Used",
+      "Drivetrain": "N/A",
+      "Seats": "5",
+      "Doors": "5",
+      "Country_version": "N/A",
+      "Offer_Number": "N/A",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "128,932 km",
+      "First_registration": "04/2013",
+      "Previous_owner": "N/A",
+      "Full_service_history": "N/A",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "51 kW (69 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,198 cc",
+      "Cylinders": "3",
+      "Gears": "N/A",
+      "Empty_weight": "1,540 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 5",
+      "Fuel_type": "Gasoline",
+      "Fuel_consumption": "5.4 l/100 km (comb.)",
+      "CO₂_emissions": "N/A"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "White",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "N/A",
+      "Upholstery_colour": "Grey",
+      "Upholstery": "Cloth"
+    },
+    "seller_info": {
+      "company_name": "L&L Cars sprl",
+      "contact_name": "N/A",
+      "location": "Rue de Verdun 181 B,\n1130 Haren, BE",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Opel Corsa",
+    "car_subtitle": "F Elegance",
+    "details_url": "https://www.autoscout24.com/offers/opel-corsa-f-elegance-gasoline-black-6ce0f050-fb90-485f-9627-3d0538157b76",
+    "price": "€ 10,490",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/6ce0f050-fb90-485f-9627-3d0538157b76_0360674c-f2b0-4906-a337-d45036c642d0.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/6ce0f050-fb90-485f-9627-3d0538157b76_f4beba7b-5026-4003-a3aa-c8f22583f45a.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/6ce0f050-fb90-485f-9627-3d0538157b76_730257ed-9ce8-44a9-b981-6e48dc7ba9d3.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/6ce0f050-fb90-485f-9627-3d0538157b76_382b6c92-7a4d-429b-ba2c-0719c54d7e1a.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/6ce0f050-fb90-485f-9627-3d0538157b76_17aecd4f-7cf6-4961-a29e-c55a4ed10391.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/6ce0f050-fb90-485f-9627-3d0538157b76_b8f9f3fa-5109-4ebc-bf8b-36a29ed602e2.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/6ce0f050-fb90-485f-9627-3d0538157b76_c12dec08-5222-4c32-97e8-d8165c47f644.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/6ce0f050-fb90-485f-9627-3d0538157b76_6535d654-b59a-4b10-881c-50394173607e.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/6ce0f050-fb90-485f-9627-3d0538157b76_07aea4dc-f9a2-4ac0-8d58-902df9a49269.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/6ce0f050-fb90-485f-9627-3d0538157b76_3208241b-3847-4297-a610-171504965bbd.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Sedan",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Front Wheel Drive",
+      "Seats": "5",
+      "Doors": "N/A",
+      "Country_version": "N/A",
+      "Offer_Number": "61325",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "86,534 km",
+      "First_registration": "11/2020",
+      "Previous_owner": "1",
+      "Full_service_history": "N/A",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "74 kW (101 hp)",
+      "Gearbox": "Automatic",
+      "Engine_size": "1,199 cc",
+      "Cylinders": "N/A",
+      "Gears": "8",
+      "Empty_weight": "N/A"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 6d",
+      "Fuel_type": "Gasoline",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "99 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Black",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "N/A",
+      "Upholstery_colour": "Black",
+      "Upholstery": "Cloth"
+    },
+    "seller_info": {
+      "company_name": "D&O Group Ollivier Alsemberg",
+      "contact_name": "Olivier Beckers",
+      "location": "Brusselsesteenweg, 122,\n1652 Alsemberg, BE",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Citroen C4",
+    "car_subtitle": "C4 Grand Picasso 1.6 hdi Style 110cv 7 POSTI AUTO.",
+    "details_url": "https://www.autoscout24.com/offers/citroen-c4-c4-grand-picasso-1-6-hdi-style-110cv-7-posti-auto-diesel-silver-553940a4-1e46-406e-8051-a38a35503899",
+    "price": "€ 2,850",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/553940a4-1e46-406e-8051-a38a35503899_b274d964-2cc2-4453-86d3-b217b58b9314.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/553940a4-1e46-406e-8051-a38a35503899_181d228d-3359-47ac-ba8e-8892ac374580.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/553940a4-1e46-406e-8051-a38a35503899_19b019e3-c088-4c20-ab94-9946ff5cda65.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/553940a4-1e46-406e-8051-a38a35503899_0ee211fb-ba5d-483d-be88-d528eb3be9fe.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/553940a4-1e46-406e-8051-a38a35503899_2a3c90c7-146a-4b74-82b9-939d966652d1.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/553940a4-1e46-406e-8051-a38a35503899_d44793e6-ca41-4132-a589-85045096f61c.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/553940a4-1e46-406e-8051-a38a35503899_bc738a6f-c15f-44c8-a79f-f31c14f5218b.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/553940a4-1e46-406e-8051-a38a35503899_d849e62d-4446-4198-abd3-24ef53ec8f17.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/553940a4-1e46-406e-8051-a38a35503899_a50f6ed1-4ac6-44f8-8f11-bd8af941f7ac.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Van",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Front Wheel Drive",
+      "Seats": "7",
+      "Doors": "5",
+      "Country_version": "N/A",
+      "Offer_Number": "N/A",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "177,633 km",
+      "First_registration": "04/2010",
+      "Previous_owner": "1",
+      "Full_service_history": "N/A",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "80 kW (109 hp)",
+      "Gearbox": "Semi-automatic",
+      "Engine_size": "1,560 cc",
+      "Cylinders": "4",
+      "Gears": "6",
+      "Empty_weight": "1,539 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 4",
+      "Fuel_type": "Diesel",
+      "Fuel_consumption": "5.7 l/100 km (comb.)",
+      "CO₂_emissions": "N/A"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Silver",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "N/A",
+      "Upholstery_colour": "Black",
+      "Upholstery": "Cloth"
+    },
+    "seller_info": {
+      "company_name": "GP Auto di Cinelli Gianpaolo",
+      "contact_name": "Gianpaolo Cinelli",
+      "location": "Via Strada Provinciale SS 45 Bis, 2,\n25020 Poncarale - BS, IT",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Renault Talisman",
+    "car_subtitle": "dCi 160 CV EDC Energy Intens",
+    "details_url": "https://www.autoscout24.com/offers/renault-talisman-dci-160-cv-edc-energy-intens-diesel-grey-98d863f8-5837-4b5c-ab43-f2e7fa5bcbf2",
+    "price": "€ 13,800",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/98d863f8-5837-4b5c-ab43-f2e7fa5bcbf2_be9a7076-03b2-4a82-b465-65292ec7a971.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/98d863f8-5837-4b5c-ab43-f2e7fa5bcbf2_c54a9056-1d94-45b0-a887-17bde0cceacf.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/98d863f8-5837-4b5c-ab43-f2e7fa5bcbf2_c8653d10-6298-48c3-adfc-23ed04cdf75c.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/98d863f8-5837-4b5c-ab43-f2e7fa5bcbf2_844498a2-b19b-4ad3-b6d0-777b9b072598.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/98d863f8-5837-4b5c-ab43-f2e7fa5bcbf2_c5660f4c-de91-4e95-976e-59e20526fd6e.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/98d863f8-5837-4b5c-ab43-f2e7fa5bcbf2_373514c8-73ed-4469-b059-77c03986f7c8.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/98d863f8-5837-4b5c-ab43-f2e7fa5bcbf2_09d206bb-44a7-4474-8188-5866918a9a34.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/98d863f8-5837-4b5c-ab43-f2e7fa5bcbf2_9cebb993-87e9-4017-ae1c-b76c1aef028f.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/98d863f8-5837-4b5c-ab43-f2e7fa5bcbf2_b5b9a6fc-bbe0-4457-b64e-cdebe069df6f.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Sedan",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Front Wheel Drive",
+      "Seats": "5",
+      "Doors": "4",
+      "Country_version": "N/A",
+      "Offer_Number": "10469761",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "52,619 km",
+      "First_registration": "11/2017",
+      "Previous_owner": "1",
+      "Full_service_history": "N/A",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "118 kW (160 hp)",
+      "Gearbox": "Automatic",
+      "Engine_size": "1,598 cc",
+      "Cylinders": "4",
+      "Gears": "6",
+      "Empty_weight": "1,558 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 6",
+      "Fuel_type": "Diesel",
+      "Fuel_consumption": "4.5 l/100 km (comb.)",
+      "CO₂_emissions": "118 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Grey",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "N/A",
+      "Upholstery_colour": "Black",
+      "Upholstery": "Part leather"
+    },
+    "seller_info": {
+      "company_name": "MP-Auto Srl",
+      "contact_name": "Marco Protasoni",
+      "location": "Viale Giuseppe Borri, 6,\n21053 Castellanza - Varese - VA, IT",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Audi Q5",
+    "car_subtitle": "2.0 TFSI quattro S LINE *BiXENON*8-FACH ALU*1.HD*",
+    "details_url": "https://www.autoscout24.com/offers/audi-q5-2-0-tfsi-quattro-s-line-bixenon-8-fach-alu-1-hd-gasoline-black-fbf8d5db-817a-45ce-8e97-22a3013d167c",
+    "price": "€ 7,950",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/fbf8d5db-817a-45ce-8e97-22a3013d167c_89b49da7-299f-42d8-b6f5-2fe588795816.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/fbf8d5db-817a-45ce-8e97-22a3013d167c_8ab1cdde-5dd0-45bc-a3b6-e9c0762206c2.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/fbf8d5db-817a-45ce-8e97-22a3013d167c_96cf9597-65cf-4542-ace3-5af8fe87d146.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/fbf8d5db-817a-45ce-8e97-22a3013d167c_a62fb0c5-c596-433c-a330-b557466d881b.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/fbf8d5db-817a-45ce-8e97-22a3013d167c_2685890c-ccac-4fb7-8809-5949a4895614.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/fbf8d5db-817a-45ce-8e97-22a3013d167c_3175f1e8-899b-4a6f-883c-7abfccf5bc36.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/fbf8d5db-817a-45ce-8e97-22a3013d167c_a1bdec56-2df2-4636-8e3c-aa7bbe3d490c.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/fbf8d5db-817a-45ce-8e97-22a3013d167c_ddf8e7e5-160d-4411-a92e-ec499475e55b.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/fbf8d5db-817a-45ce-8e97-22a3013d167c_9669b2cf-b037-4381-89a8-aa416a164e39.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/fbf8d5db-817a-45ce-8e97-22a3013d167c_6fbe72d0-a564-4f41-9c2b-06d7dce859e4.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Off-Road/Pick-up",
+      "Vehicle_type": "Used",
+      "Drivetrain": "4WD",
+      "Seats": "5",
+      "Doors": "5",
+      "Country_version": "Germany",
+      "Offer_Number": "N/A",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "207,000 km",
+      "First_registration": "10/2010",
+      "Previous_owner": "1",
+      "Full_service_history": "N/A",
+      "General_inspection": "11/2026"
+    },
+    "Technical_Data": {
+      "Power": "132 kW (179 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,984 cc",
+      "Cylinders": "4",
+      "Gears": "N/A",
+      "Empty_weight": "1,795 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 5",
+      "Fuel_type": "Super 95",
+      "Fuel_consumption": "8.1 l/100 km (comb.)",
+      "CO₂_emissions": "188 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Black",
+      "Paint": "N/A",
+      "Manufacturer_colour": "Brillantschwarz",
+      "Upholstery_colour": "Black",
+      "Upholstery": "Part leather"
+    },
+    "seller_info": {
+      "company_name": "Si Automobile GmbH & Co. KG",
+      "contact_name": "N/A",
+      "location": "Talstr. 12,\n73650 Winterbach, DE",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Ford Mondeo",
+    "car_subtitle": "Turnier Viva X / beh FS / 2. Hand",
+    "details_url": "https://www.autoscout24.com/offers/ford-mondeo-turnier-viva-x-beh-fs-2-hand-diesel-grey-4c459719-96ef-441b-9199-9f4571cd84ad",
+    "price": "€ 1,490",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/4c459719-96ef-441b-9199-9f4571cd84ad_0d24272d-30d4-4d74-8f54-1b906b2a851f.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Station wagon",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Front Wheel Drive",
+      "Seats": "5",
+      "Doors": "4",
+      "Country_version": "Germany",
+      "Offer_Number": "N/A",
+      "Model_Code": "8566/ADU"
+    },
+    "Vehicle_History": {
+      "Mileage": "132,500 km",
+      "First_registration": "04/2005",
+      "Previous_owner": "2",
+      "Full_service_history": "N/A",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "96 kW (131 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,997 cc",
+      "Cylinders": "4",
+      "Gears": "N/A",
+      "Empty_weight": "N/A"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 4",
+      "Fuel_type": "Diesel",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "165 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Grey",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "Graphit-Grau Metallic",
+      "Upholstery_colour": "Black",
+      "Upholstery": "Cloth"
+    },
+    "seller_info": {
+      "company_name": "Lunicars Inh. Christoph Richter",
+      "contact_name": "Christoph Richter",
+      "location": "Max Liebermann Straße 83,\n04157 Leipzig, DE",
+      "phone": []
+    }
   }
 ]
