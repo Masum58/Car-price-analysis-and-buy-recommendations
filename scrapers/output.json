@@ -9190,5 +9190,818 @@
         "+32 (0)485 - 143679"
       ]
     }
+  },
+  {
+    "car_title": "Volkswagen Golf",
+    "car_subtitle": "1.6 Bon Jovi Schiebedach",
+    "details_url": "https://www.autoscout24.com/offers/volkswagen-golf-1-6-bon-jovi-schiebedach-gasoline-green-e05d4e90-28c7-4c34-b4f8-ed7df9525cba",
+    "price": "€ 590",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/e05d4e90-28c7-4c34-b4f8-ed7df9525cba_0f88a479-348b-419d-a966-31b4ae052872.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/e05d4e90-28c7-4c34-b4f8-ed7df9525cba_70fe06ef-15b4-4923-93be-726897d80b30.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/e05d4e90-28c7-4c34-b4f8-ed7df9525cba_933337ce-48a0-4ae2-9fc0-1e7e90d4985e.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/e05d4e90-28c7-4c34-b4f8-ed7df9525cba_e1352f94-6965-4bb8-9e88-8d131d36a5d6.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/e05d4e90-28c7-4c34-b4f8-ed7df9525cba_22469bf5-aec4-4848-9279-ae69c6cea9dc.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/e05d4e90-28c7-4c34-b4f8-ed7df9525cba_65f5f116-47ae-4db1-b4af-ff438267580e.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Sedan",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Front Wheel Drive",
+      "Seats": "5",
+      "Doors": "4",
+      "Country_version": "N/A",
+      "Offer_Number": "N/A",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "171,000 km",
+      "First_registration": "07/1997",
+      "Previous_owner": "2",
+      "Full_service_history": "N/A",
+      "General_inspection": "07/2025"
+    },
+    "Technical_Data": {
+      "Power": "55 kW (75 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,598 cc",
+      "Cylinders": "4",
+      "Gears": "N/A",
+      "Empty_weight": "N/A"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 4",
+      "Fuel_type": "Gasoline",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "N/A"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Green",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "N/A",
+      "Upholstery_colour": "Black",
+      "Upholstery": "Cloth"
+    },
+    "seller_info": {
+      "company_name": "Alex-Automobile",
+      "contact_name": "Cebotari Alexei",
+      "location": "Von-Ketteler-Straße 28,\n31137 Hildesheim, DE",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Alfa Romeo Brera",
+    "car_subtitle": "2.0 JTD M-Jet * Ti SPORT * 1ER PROPRIETAIRE *",
+    "details_url": "https://www.autoscout24.com/offers/alfa-romeo-brera-2-0-jtd-m-jet-ti-sport-1er-proprietaire-diesel-red-870332cc-7834-4ab5-8289-42c8e8b79e64",
+    "price": "€ 4,990",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/870332cc-7834-4ab5-8289-42c8e8b79e64_c58b4f0f-17f6-4b20-8b5a-d2f788352fff.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/870332cc-7834-4ab5-8289-42c8e8b79e64_03082ba8-9d54-4214-94cf-097ef48d105f.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/870332cc-7834-4ab5-8289-42c8e8b79e64_553fdecd-dae0-435a-b903-0808366811be.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/870332cc-7834-4ab5-8289-42c8e8b79e64_e87d7aa4-5840-4d28-8faa-e503ef45e016.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/870332cc-7834-4ab5-8289-42c8e8b79e64_0ebf3e89-b903-4783-961f-0903c49d8539.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Coupe",
+      "Vehicle_type": "Demonstration",
+      "Drivetrain": "N/A",
+      "Seats": "4",
+      "Doors": "3",
+      "Country_version": "N/A",
+      "Offer_Number": "N/A",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "238,977 km",
+      "First_registration": "04/2010",
+      "Previous_owner": "1",
+      "Full_service_history": "Yes",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "120 kW (163 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,956 cc",
+      "Cylinders": "4",
+      "Gears": "6",
+      "Empty_weight": "1,930 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 5",
+      "Fuel_type": "Diesel",
+      "Fuel_consumption": "5.4 l/100 km (comb.)",
+      "CO₂_emissions": "142 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Red",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "N/A",
+      "Upholstery_colour": "Black",
+      "Upholstery": "Full leather"
+    },
+    "seller_info": {
+      "company_name": "Ab Cars Visé",
+      "contact_name": "Grégory Bruno",
+      "location": "Rue de Jupille 40,\n4600 Visé, BE",
+      "phone": [
+        "+32 (0)470 - 711867"
+      ]
+    }
+  },
+  {
+    "car_title": "Ford Tourneo Connect",
+    "car_subtitle": "Kombi kurz*CD-Player*Klima*Radio",
+    "details_url": "https://www.autoscout24.com/offers/ford-tourneo-connect-kombi-kurz-cd-player-klima-radio-gasoline-silver-34b5d228-d69c-4803-893c-55aea98954cd",
+    "price": "€ 990",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/34b5d228-d69c-4803-893c-55aea98954cd_7c2c457b-960f-4cc6-b688-dba902a977d5.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/34b5d228-d69c-4803-893c-55aea98954cd_950dbcf4-b17d-4362-be2d-699b620efc5a.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/34b5d228-d69c-4803-893c-55aea98954cd_5556470d-ace4-41f1-96b8-b4425fd342b0.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/34b5d228-d69c-4803-893c-55aea98954cd_a7631b47-418c-460d-a5bf-6740521056b2.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/34b5d228-d69c-4803-893c-55aea98954cd_665bd76a-b7db-468e-8f60-e0920e1f79d9.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/34b5d228-d69c-4803-893c-55aea98954cd_b759c437-6e33-46e2-859e-ab0f2b3fd6d4.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/34b5d228-d69c-4803-893c-55aea98954cd_ace3a516-270f-4946-b787-3828baf46ebf.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Van",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Front Wheel Drive",
+      "Seats": "3",
+      "Doors": "4",
+      "Country_version": "Germany",
+      "Offer_Number": "29962//335",
+      "Model_Code": "8566/525"
+    },
+    "Vehicle_History": {
+      "Mileage": "145,700 km",
+      "First_registration": "11/2005",
+      "Previous_owner": "3",
+      "Full_service_history": "N/A",
+      "General_inspection": "07/2025"
+    },
+    "Technical_Data": {
+      "Power": "85 kW (116 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,796 cc",
+      "Cylinders": "4",
+      "Gears": "N/A",
+      "Empty_weight": "1,495 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 3",
+      "Fuel_type": "Gasoline",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "223 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Silver",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "Polar-Silber Metallic",
+      "Upholstery_colour": "Black",
+      "Upholstery": "Cloth"
+    },
+    "seller_info": {
+      "company_name": "MYAUTOCENTER OHG",
+      "contact_name": "ein Anruf zu Ihrem Traumwagen",
+      "location": "Lebzelterstr. 7,\n85276 Pfaffenhofen an der Ilm, DE",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Renault Clio",
+    "car_subtitle": "1.6-16V Community Nieuw apk",
+    "details_url": "https://www.autoscout24.com/offers/renault-clio-1-6-16v-community-nieuw-apk-gasoline-blue-db06037f-1a5d-483a-88b0-eae7b31db06f",
+    "price": "€ 1,795",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/db06037f-1a5d-483a-88b0-eae7b31db06f_33c45d40-d80e-4c15-834f-1c2ec37234d3.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/db06037f-1a5d-483a-88b0-eae7b31db06f_140bfd50-96bc-4b1f-86c5-8b0889c1a9d7.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/db06037f-1a5d-483a-88b0-eae7b31db06f_f7061a87-62d7-4d23-9319-1c5310389bbe.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/db06037f-1a5d-483a-88b0-eae7b31db06f_59e22080-3ebd-452b-bc45-831c6b4c3ceb.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/db06037f-1a5d-483a-88b0-eae7b31db06f_0d2e0f77-2881-4aec-8a11-779d0417703c.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/db06037f-1a5d-483a-88b0-eae7b31db06f_f26779c4-87d0-42c0-95d5-c49179475043.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Compact",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Front Wheel Drive",
+      "Seats": "5",
+      "Doors": "3",
+      "Country_version": "N/A",
+      "Offer_Number": "37-SF-PR",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "108,553 km",
+      "First_registration": "12/2005",
+      "Previous_owner": "N/A",
+      "Full_service_history": "N/A",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "79 kW (107 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,598 cc",
+      "Cylinders": "4",
+      "Gears": "N/A",
+      "Empty_weight": "975 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 4",
+      "Fuel_type": "Gasoline",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "165 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Blue",
+      "Paint": "N/A",
+      "Manufacturer_colour": "Blauw",
+      "Upholstery_colour": "N/A",
+      "Upholstery": "N/A"
+    },
+    "seller_info": {
+      "company_name": "Euromast Auto's",
+      "contact_name": "Afdeling Verkoop",
+      "location": "Randweg 10,\n2941 CG LEKKERKERK, NL",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "BMW 216",
+    "car_subtitle": "216 d Gran Tourer *Sport Line*LED*PDC*Bluetooth",
+    "details_url": "https://www.autoscout24.com/offers/bmw-216-216-d-gran-tourer-sport-line-led-pdc-bluetooth-diesel-black-1af778ff-1a3b-4840-9fe6-9e6fbfcafa79",
+    "price": "€ 7,999",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/1af778ff-1a3b-4840-9fe6-9e6fbfcafa79_64bc38b8-bb0d-4c52-8992-37c16dbcc4b2.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/1af778ff-1a3b-4840-9fe6-9e6fbfcafa79_9e2ef938-fea7-4a98-8fca-d05db0b681a6.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/1af778ff-1a3b-4840-9fe6-9e6fbfcafa79_592ce8db-02f0-4db9-991d-977e786c36e6.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/1af778ff-1a3b-4840-9fe6-9e6fbfcafa79_b1daad62-1657-4d8e-9b50-de009940b111.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/1af778ff-1a3b-4840-9fe6-9e6fbfcafa79_94ceda71-f49c-4ddd-96f8-175e719eaf70.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/1af778ff-1a3b-4840-9fe6-9e6fbfcafa79_c2eea791-937c-4589-a971-499f68e9b919.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Van",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Front Wheel Drive",
+      "Seats": "5",
+      "Doors": "4",
+      "Country_version": "Germany",
+      "Offer_Number": "16987//52",
+      "Model_Code": "0005/BZE"
+    },
+    "Vehicle_History": {
+      "Mileage": "120,000 km",
+      "First_registration": "10/2018",
+      "Previous_owner": "2",
+      "Full_service_history": "Yes",
+      "General_inspection": "12/2025"
+    },
+    "Technical_Data": {
+      "Power": "85 kW (116 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,496 cc",
+      "Cylinders": "3",
+      "Gears": "N/A",
+      "Empty_weight": "1,555 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 6",
+      "Fuel_type": "Diesel",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "116 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Black",
+      "Paint": "N/A",
+      "Manufacturer_colour": "SCHWARZ II/BONNET FLUID BLACK",
+      "Upholstery_colour": "Black",
+      "Upholstery": "Part leather"
+    },
+    "seller_info": {
+      "company_name": "MYAUTOCENTER OHG",
+      "contact_name": "ein Anruf zu Ihrem Traumwagen",
+      "location": "Lebzelterstr. 7,\n85276 Pfaffenhofen an der Ilm, DE",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Ford Fiesta",
+    "car_subtitle": "1.4-16V Futura Airco - 5Deurs - Nieuw apk",
+    "details_url": "https://www.autoscout24.com/offers/ford-fiesta-1-4-16v-futura-airco-5deurs-nieuw-apk-gasoline-grey-d521c797-d156-4282-94e3-21c423781cc7",
+    "price": "€ 1,195",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/d521c797-d156-4282-94e3-21c423781cc7_6a8d6ffb-802c-4f59-be03-0369241a33a9.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/d521c797-d156-4282-94e3-21c423781cc7_99337246-55c8-4452-8e92-7f127cc4334a.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/d521c797-d156-4282-94e3-21c423781cc7_defa8cf0-bf5d-47de-9c5c-1e03542d2e41.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/d521c797-d156-4282-94e3-21c423781cc7_f7bd2447-c159-49fc-a737-f4e422bde013.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/d521c797-d156-4282-94e3-21c423781cc7_1047d5d8-34da-4a43-a826-cd8f2a43026c.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/d521c797-d156-4282-94e3-21c423781cc7_037b6af8-48d3-45a6-a3b1-bba8dcbb4f52.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/d521c797-d156-4282-94e3-21c423781cc7_801b426c-098f-49f6-8e2e-c85cbd57291e.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Compact",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Front Wheel Drive",
+      "Seats": "5",
+      "Doors": "5",
+      "Country_version": "N/A",
+      "Offer_Number": "41-RJ-KP",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "238,772 km",
+      "First_registration": "04/2005",
+      "Previous_owner": "N/A",
+      "Full_service_history": "N/A",
+      "General_inspection": "05/2026"
+    },
+    "Technical_Data": {
+      "Power": "59 kW (80 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,388 cc",
+      "Cylinders": "4",
+      "Gears": "N/A",
+      "Empty_weight": "1,002 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 3",
+      "Fuel_type": "Gasoline",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "154 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Grey",
+      "Paint": "N/A",
+      "Manufacturer_colour": "Grijs",
+      "Upholstery_colour": "N/A",
+      "Upholstery": "N/A"
+    },
+    "seller_info": {
+      "company_name": "Euromast Auto's",
+      "contact_name": "Afdeling Verkoop",
+      "location": "Randweg 10,\n2941 CG LEKKERKERK, NL",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "BMW 318",
+    "car_subtitle": "i Lim. *HU/AU 02/2027*KLIMA*ALU*SHZG*PDC*",
+    "details_url": "https://www.autoscout24.com/offers/bmw-318-i-lim-hu-au-02-2027-klima-alu-shzg-pdc-gasoline-silver-f638952b-496e-48d8-83cc-b5ff0d5fbc8c",
+    "price": "€ 2,999",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/f638952b-496e-48d8-83cc-b5ff0d5fbc8c_64295718-baf7-4cca-bb17-88296ebccea7.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/f638952b-496e-48d8-83cc-b5ff0d5fbc8c_510f9d61-7d16-4584-b6f4-1c0b1d415e0c.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/f638952b-496e-48d8-83cc-b5ff0d5fbc8c_1fa8d658-377c-4f85-882e-cf74e7bad2e4.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/f638952b-496e-48d8-83cc-b5ff0d5fbc8c_dfa51d0c-bb78-4289-b8a1-c08757488444.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/f638952b-496e-48d8-83cc-b5ff0d5fbc8c_f7e9b876-be50-4e8e-8c03-a14efeb4d1ce.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/f638952b-496e-48d8-83cc-b5ff0d5fbc8c_90289bee-0aa2-42e7-8aba-15ec5891e75b.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/f638952b-496e-48d8-83cc-b5ff0d5fbc8c_004ec49e-f590-41f7-8922-b64cdf7663d8.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/f638952b-496e-48d8-83cc-b5ff0d5fbc8c_60397e27-b844-44fe-a8b8-3bbcba9a21ce.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Sedan",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Rear Wheel Drive",
+      "Seats": "5",
+      "Doors": "4",
+      "Country_version": "Germany",
+      "Offer_Number": "N/A",
+      "Model_Code": "0005/ADK"
+    },
+    "Vehicle_History": {
+      "Mileage": "267,595 km",
+      "First_registration": "11/2005",
+      "Previous_owner": "N/A",
+      "Full_service_history": "N/A",
+      "General_inspection": "02/2027"
+    },
+    "Technical_Data": {
+      "Power": "95 kW (129 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,995 cc",
+      "Cylinders": "4",
+      "Gears": "N/A",
+      "Empty_weight": "1,435 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 4",
+      "Fuel_type": "Gasoline",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "175 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Silver",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "TITANSILBER METALLIC",
+      "Upholstery_colour": "Black",
+      "Upholstery": "Cloth"
+    },
+    "seller_info": {
+      "company_name": "Heinemann Automobile",
+      "contact_name": "Ali Hassan Aziz",
+      "location": "Frillendorfer Straße 150f,\n45139 Essen, DE",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Jeep Avenger",
+    "car_subtitle": "Avenger 1.2 Turbo 100 CV Longitude PROMO FLEX",
+    "details_url": "https://www.autoscout24.com/offers/jeep-avenger-avenger-1-2-turbo-100-cv-longitude-promo-flex-gasoline-beige-0bddb0a9-f67c-4c80-9ad7-5da54f29e1c2",
+    "price": "€ 17,990",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/0bddb0a9-f67c-4c80-9ad7-5da54f29e1c2_df569d4f-e009-481f-931d-f5b636a36410.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/0bddb0a9-f67c-4c80-9ad7-5da54f29e1c2_188aee9e-409d-451b-a268-68d755f6ddcd.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/0bddb0a9-f67c-4c80-9ad7-5da54f29e1c2_5f9385a0-6466-4b1a-9e04-e22d7202eebd.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/0bddb0a9-f67c-4c80-9ad7-5da54f29e1c2_6a9f916c-50f7-4c7d-b44d-d7e1b6dc9fb9.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/0bddb0a9-f67c-4c80-9ad7-5da54f29e1c2_c95ceee6-17a2-4fa7-8d93-d50a98f17332.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/0bddb0a9-f67c-4c80-9ad7-5da54f29e1c2_9786dd0a-213b-4975-8ffb-aba079a5f2b7.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/0bddb0a9-f67c-4c80-9ad7-5da54f29e1c2_36b190e1-8bce-40d9-9365-77570c7346da.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Off-Road/Pick-up",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Front Wheel Drive",
+      "Seats": "5",
+      "Doors": "5",
+      "Country_version": "N/A",
+      "Offer_Number": "9917345",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "10 km",
+      "First_registration": "01/2026",
+      "Previous_owner": "N/A",
+      "Full_service_history": "N/A",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "74 kW (101 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,199 cc",
+      "Cylinders": "3",
+      "Gears": "6",
+      "Empty_weight": "1,180 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 6d-TEMP",
+      "Fuel_type": "Gasoline",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "128 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Beige",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "N/A",
+      "Upholstery_colour": "Black",
+      "Upholstery": "Cloth"
+    },
+    "seller_info": {
+      "company_name": "Puntocar di Tarantino Andrea - Sede di Orbassano",
+      "contact_name": "Reparto Vendite",
+      "location": "Strada Torino, 47,\n10043 Orbassano - Torino - TO, IT",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Volkswagen Polo",
+    "car_subtitle": "V Style BlueMotion/BMT *Klima*SHZ*Radio*MP3",
+    "details_url": "https://www.autoscout24.com/offers/volkswagen-polo-v-style-bluemotion-bmt-klima-shz-radio-mp3-diesel-white-e7a2b3f7-0020-4ea0-8dbd-ae04fbcc7949",
+    "price": "€ 4,490",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/e7a2b3f7-0020-4ea0-8dbd-ae04fbcc7949_bd653f2f-e7d5-45b5-8f01-a857b479ab9a.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/e7a2b3f7-0020-4ea0-8dbd-ae04fbcc7949_3f5a3178-6508-4af2-8628-d2896e771caa.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/e7a2b3f7-0020-4ea0-8dbd-ae04fbcc7949_3d57b7bc-5b88-419a-8140-b4496cd507ee.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/e7a2b3f7-0020-4ea0-8dbd-ae04fbcc7949_e5c6a0c0-1d34-47c5-a2df-edd846b59a1c.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/e7a2b3f7-0020-4ea0-8dbd-ae04fbcc7949_229fde2d-ec25-4410-822e-aa6835267c1c.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Sedan",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Front Wheel Drive",
+      "Seats": "5",
+      "Doors": "4",
+      "Country_version": "Germany",
+      "Offer_Number": "17951//84",
+      "Model_Code": "0603/APU"
+    },
+    "Vehicle_History": {
+      "Mileage": "221,700 km",
+      "First_registration": "09/2011",
+      "Previous_owner": "3",
+      "Full_service_history": "N/A",
+      "General_inspection": "New"
+    },
+    "Technical_Data": {
+      "Power": "66 kW (90 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,598 cc",
+      "Cylinders": "4",
+      "Gears": "N/A",
+      "Empty_weight": "1,165 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 5",
+      "Fuel_type": "Diesel",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "96 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "White",
+      "Paint": "N/A",
+      "Manufacturer_colour": "CANDYWEISS",
+      "Upholstery_colour": "Black",
+      "Upholstery": "Cloth"
+    },
+    "seller_info": {
+      "company_name": "MYAUTOCENTER OHG",
+      "contact_name": "ein Anruf zu Ihrem Traumwagen",
+      "location": "Lebzelterstr. 7,\n85276 Pfaffenhofen an der Ilm, DE",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Jeep Avenger",
+    "car_subtitle": "1.2 Turbo Longitude PROMO FLEX",
+    "details_url": "https://www.autoscout24.com/offers/jeep-avenger-1-2-turbo-longitude-promo-flex-gasoline-red-2891f95e-e8f1-4cc6-b92c-3b005f9f53d6",
+    "price": "€ 17,990",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/2891f95e-e8f1-4cc6-b92c-3b005f9f53d6_e518519c-a9d9-4b10-9883-0cd17bf99308.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/2891f95e-e8f1-4cc6-b92c-3b005f9f53d6_73237905-af16-436c-9f56-43a21cd5b2d6.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/2891f95e-e8f1-4cc6-b92c-3b005f9f53d6_10dfc094-2c74-43ec-901c-029976755b42.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/2891f95e-e8f1-4cc6-b92c-3b005f9f53d6_f0fcacd3-1908-4ac1-a6c3-1ac462c687a4.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/2891f95e-e8f1-4cc6-b92c-3b005f9f53d6_b51470a8-be1e-4582-9c0a-f5989dc33f9e.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/2891f95e-e8f1-4cc6-b92c-3b005f9f53d6_729b9ad1-1589-4a7f-bdf2-9f085238a5b8.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Off-Road/Pick-up",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Front Wheel Drive",
+      "Seats": "5",
+      "Doors": "5",
+      "Country_version": "N/A",
+      "Offer_Number": "9560350",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "10 km",
+      "First_registration": "01/2026",
+      "Previous_owner": "N/A",
+      "Full_service_history": "N/A",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "74 kW (101 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,199 cc",
+      "Cylinders": "3",
+      "Gears": "6",
+      "Empty_weight": "1,180 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 6",
+      "Fuel_type": "Gasoline",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "124 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Red",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "N/A",
+      "Upholstery_colour": "Black",
+      "Upholstery": "Cloth"
+    },
+    "seller_info": {
+      "company_name": "Puntocar di Tarantino Andrea - Sede di Orbassano",
+      "contact_name": "Reparto Vendite",
+      "location": "Strada Torino, 47,\n10043 Orbassano - Torino - TO, IT",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Volkswagen Polo",
+    "car_subtitle": "1.4 Comfortline Klima",
+    "details_url": "https://www.autoscout24.com/offers/volkswagen-polo-1-4-comfortline-klima-gasoline-blue-900d030f-3f08-4004-81ab-7cef379f5cad",
+    "price": "€ 499",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/900d030f-3f08-4004-81ab-7cef379f5cad_75fcbb46-86fc-4545-8bdb-da92676b65a1.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/900d030f-3f08-4004-81ab-7cef379f5cad_620162a0-cb62-4927-9a29-dd4ea9746e7f.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/900d030f-3f08-4004-81ab-7cef379f5cad_29c31c26-821c-4bb9-83fe-35f22033c537.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/900d030f-3f08-4004-81ab-7cef379f5cad_274d0101-e8ec-4c86-a57d-d6040ffe80f8.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/900d030f-3f08-4004-81ab-7cef379f5cad_9c1c6e86-f812-4662-a3c2-d700d6d3b21d.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/900d030f-3f08-4004-81ab-7cef379f5cad_9adbb8e8-795c-4aaa-9d9a-9b73ee836e50.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Sedan",
+      "Vehicle_type": "Used",
+      "Drivetrain": "N/A",
+      "Seats": "5",
+      "Doors": "4",
+      "Country_version": "N/A",
+      "Offer_Number": "0979",
+      "Model_Code": "0603/657"
+    },
+    "Vehicle_History": {
+      "Mileage": "254,033 km",
+      "First_registration": "12/2004",
+      "Previous_owner": "N/A",
+      "Full_service_history": "N/A",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "55 kW (75 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,390 cc",
+      "Cylinders": "N/A",
+      "Gears": "N/A",
+      "Empty_weight": "N/A"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 4",
+      "Fuel_type": "Regular/Benzine 91",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "N/A"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Blue",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "N/A",
+      "Upholstery_colour": "Grey",
+      "Upholstery": "Cloth"
+    },
+    "seller_info": {
+      "company_name": "Autohändlerwelt GmbH",
+      "contact_name": "Daniel Nietzschmann",
+      "location": "Otto-Hahn-Straße 4,\n06796 Sandersdorf-Brehna, DE",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Kia Rio",
+    "car_subtitle": "Edition 7 1.4 5-Türer *KLIMA*TÜV08/2026*",
+    "details_url": "https://www.autoscout24.com/offers/kia-rio-edition-7-1-4-5-tuerer-klima-tuev08-2026-gasoline-silver-9b26df67-626f-491e-a057-c0362d82b090",
+    "price": "€ 2,999",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/9b26df67-626f-491e-a057-c0362d82b090_a8aa487f-aa97-4d2a-a568-837b38627b26.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/9b26df67-626f-491e-a057-c0362d82b090_ac0f20fd-28bb-4a89-b396-7780afb74c09.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/9b26df67-626f-491e-a057-c0362d82b090_0d0f07e3-9160-4b86-bcf3-95250fecaa06.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/9b26df67-626f-491e-a057-c0362d82b090_e21cd959-6c68-4cf1-a0fa-f29fe481b2a8.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/9b26df67-626f-491e-a057-c0362d82b090_69ff039c-4ac3-413b-bf21-9422b740b08f.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/9b26df67-626f-491e-a057-c0362d82b090_35fd5ca9-0512-4273-9f61-8bfa8ef26043.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/9b26df67-626f-491e-a057-c0362d82b090_6c51c2c7-fdb7-4a95-9e56-1fff7f00299c.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Compact",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Front Wheel Drive",
+      "Seats": "5",
+      "Doors": "4",
+      "Country_version": "Germany",
+      "Offer_Number": "05017//229",
+      "Model_Code": "8253/ADT"
+    },
+    "Vehicle_History": {
+      "Mileage": "138,673 km",
+      "First_registration": "09/2011",
+      "Previous_owner": "4",
+      "Full_service_history": "Yes",
+      "General_inspection": "08/2026"
+    },
+    "Technical_Data": {
+      "Power": "80 kW (109 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,396 cc",
+      "Cylinders": "4",
+      "Gears": "N/A",
+      "Empty_weight": "1,141 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 5",
+      "Fuel_type": "Gasoline",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "130 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Silver",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "BRIGHT SILVER",
+      "Upholstery_colour": "Black",
+      "Upholstery": "Cloth"
+    },
+    "seller_info": {
+      "company_name": "MYAUTOCENTER OHG",
+      "contact_name": "ein Anruf zu Ihrem Traumwagen",
+      "location": "Lebzelterstr. 7,\n85276 Pfaffenhofen an der Ilm, DE",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "BMW 318",
+    "car_subtitle": "d Touring *2. Hand*Klima*SHZ*Navi*Bi-Xenon*",
+    "details_url": "https://www.autoscout24.com/offers/bmw-318-d-touring-2-hand-klima-shz-navi-bi-xenon-diesel-brown-9da62791-b583-40df-a1b6-22f45973d7bb",
+    "price": "€ 8,699",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/9da62791-b583-40df-a1b6-22f45973d7bb_81450f83-36ce-4e72-8814-628a8199e2df.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/9da62791-b583-40df-a1b6-22f45973d7bb_bc5b1d84-8e51-423c-bd93-5747086a1f53.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/9da62791-b583-40df-a1b6-22f45973d7bb_8ffe5102-c1b6-439f-ad9f-b96297deb5ae.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/9da62791-b583-40df-a1b6-22f45973d7bb_52901331-e55e-4a36-be2d-08c9c15f1d27.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Station wagon",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Rear Wheel Drive",
+      "Seats": "5",
+      "Doors": "4",
+      "Country_version": "Germany",
+      "Offer_Number": "23965//66",
+      "Model_Code": "0005/AXB"
+    },
+    "Vehicle_History": {
+      "Mileage": "149,100 km",
+      "First_registration": "05/2013",
+      "Previous_owner": "2",
+      "Full_service_history": "N/A",
+      "General_inspection": "05/2026"
+    },
+    "Technical_Data": {
+      "Power": "105 kW (143 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,995 cc",
+      "Cylinders": "4",
+      "Gears": "N/A",
+      "Empty_weight": "1,550 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 5",
+      "Fuel_type": "Diesel",
+      "Fuel_consumption": "N/A",
+      "CO₂_emissions": "119 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Brown",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "SPARKLING BRONZE",
+      "Upholstery_colour": "Black",
+      "Upholstery": "Cloth"
+    },
+    "seller_info": {
+      "company_name": "MYAUTOCENTER OHG",
+      "contact_name": "ein Anruf zu Ihrem Traumwagen",
+      "location": "Lebzelterstr. 7,\n85276 Pfaffenhofen an der Ilm, DE",
+      "phone": []
+    }
+  },
+  {
+    "car_title": "Alfa Romeo MiTo",
+    "car_subtitle": "Neopatentati 1.4 Benzina Progression 1 propriet.",
+    "details_url": "https://www.autoscout24.com/offers/alfa-romeo-mito-neopatentati-1-4-benzina-progression-1-propriet-gasoline-black-30231064-9cca-4bae-9e4d-a9df8cb90a6d",
+    "price": "€ 3,550",
+    "all_images": [
+      "https://prod.pictures.autoscout24.net/listing-images/30231064-9cca-4bae-9e4d-a9df8cb90a6d_27f6199b-4a86-44ba-b51e-773304e27a7f.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/30231064-9cca-4bae-9e4d-a9df8cb90a6d_eac24313-d6f8-42b7-8a17-b017daa719ca.jpg/1280x960.webp",
+      "https://prod.pictures.autoscout24.net/listing-images/30231064-9cca-4bae-9e4d-a9df8cb90a6d_2e73f553-eba1-459b-8568-f1a2cf66a6c9.jpg/1280x960.webp"
+    ],
+    "Basic_Data": {
+      "Body_type": "Sedan",
+      "Vehicle_type": "Used",
+      "Drivetrain": "Front Wheel Drive",
+      "Seats": "4",
+      "Doors": "3",
+      "Country_version": "Italy",
+      "Offer_Number": "N/A",
+      "Model_Code": "N/A"
+    },
+    "Vehicle_History": {
+      "Mileage": "185,000 km",
+      "First_registration": "04/2011",
+      "Previous_owner": "1",
+      "Full_service_history": "N/A",
+      "General_inspection": "N/A"
+    },
+    "Technical_Data": {
+      "Power": "58 kW (79 hp)",
+      "Gearbox": "Manual",
+      "Engine_size": "1,368 cc",
+      "Cylinders": "4",
+      "Gears": "5",
+      "Empty_weight": "1,080 kg"
+    },
+    "Energy_Consumption": {
+      "Emission_class": "Euro 5",
+      "Fuel_type": "Gasoline",
+      "Fuel_consumption": "5.9 l/100 km (comb.)",
+      "CO₂_emissions": "138 g/km (comb.)"
+    },
+    "Colour_and_Upholstery": {
+      "Colour": "Black",
+      "Paint": "Metallic",
+      "Manufacturer_colour": "N/A",
+      "Upholstery_colour": "Black",
+      "Upholstery": "Cloth"
+    },
+    "seller_info": {
+      "company_name": "Smart 111 di Pietro Tartamella",
+      "contact_name": "Pietro Tartamella",
+      "location": "Via Tre Giugno, 9,\n20020 Robecchetto Con Induno - Milano - MI, IT",
+      "phone": []
+    }
   }
 ]
