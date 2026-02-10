@@ -37,28 +37,18 @@ BUDGET_BRANDS = ["DACIA", "SKODA", "SEAT", "KIA", "HYUNDAI"]
 # BASIC HELPERS
 # =========================
 def calculate_age(year: Optional[int]) -> int:
-    """
-    Returns how old the car is.
-    If year is missing or invalid, age is 0.
-    """
     if not isinstance(year, int):
         return 0
     return max(0, datetime.now().year - year)
 
 
 def is_premium_brand(brand: Optional[str]) -> bool:
-    """
-    Checks if brand belongs to premium category.
-    """
     if not brand:
         return False
     return brand.upper() in PREMIUM_BRANDS
 
 
 def safe_float(value, default=0.0):
-    """
-    Converts value to float safely.
-    """
     try:
         return float(value)
     except (TypeError, ValueError):
@@ -66,43 +56,80 @@ def safe_float(value, default=0.0):
 
 
 def safe_int(value, default=0):
-    """
-    Converts value to int safely.
-    """
     try:
         return int(value)
     except (TypeError, ValueError):
         return default
 
+
+# =========================
+# NORMALIZE SCRAPED OUTPUT.JSON
+# =========================
+def normalize_scraped_car(scraped_car: dict) -> dict:
+    """
+    Converts raw scraper output.json car
+    into clean numeric format used by profit engine.
+    """
+
+    title = scraped_car.get("car_title", "")
+    brand = title.split(" ")[0] if title else ""
+
+    # Price: "€ 3,950" -> 3950
+    price_numeric = 0
+    raw_price = scraped_car.get("price", "")
+    if raw_price:
+        price_numeric = int(
+            raw_price.replace("€", "").replace(",", "").strip()
+        )
+
+    # Mileage: "239,000 km" -> 239000
+    mileage_numeric = 0
+    raw_mileage = scraped_car.get("Vehicle_History", {}).get("Mileage", "")
+    if raw_mileage:
+        mileage_numeric = int(
+            raw_mileage.replace("km", "").replace(",", "").strip()
+        )
+
+    # Year: "11/2015" -> 2015
+    year_numeric = None
+    raw_year = scraped_car.get("Vehicle_History", {}).get("First_registration", "")
+    if raw_year and "/" in raw_year:
+        year_numeric = int(raw_year.split("/")[-1])
+
+    fuel_type = scraped_car.get("Energy_Consumption", {}).get("Fuel_type")
+    transmission = scraped_car.get("Technical_Data", {}).get("Gearbox")
+
+    return {
+        "title": title,
+        "brand": brand,
+        "year_numeric": year_numeric,
+        "mileage_numeric": mileage_numeric,
+        "price_numeric": price_numeric,
+        "fuel_type": fuel_type,
+        "transmission": transmission,
+        "url": scraped_car.get("details_url"),
+    }
+
+
 # =========================
 # LOAD CLEAN CAR DATA
 # =========================
 def load_car_data() -> List[dict]:
-    """
-    Loads cleaned car dataset from disk.
-    """
     if not os.path.exists(DATA_PATH):
         raise FileNotFoundError("Car data file not found")
 
     with open(DATA_PATH, "r", encoding="utf-8") as f:
         return json.load(f)
 
+
 # =========================
 # MARKET VALUE ESTIMATION
 # =========================
 def estimate_market_value(car_data: dict) -> float:
-    """
-    Estimates realistic resale market value.
-
-    This does NOT depend on listed price.
-    It represents expected market resale value.
-    """
-
     brand = car_data.get("brand", "")
     year = car_data.get("year_numeric")
     mileage = safe_float(car_data.get("mileage_numeric"), 0)
 
-    # Base market value by brand category
     if is_premium_brand(brand):
         base_value = 12000
     elif brand and brand.upper() in MID_TIER_BRANDS:
@@ -112,23 +139,17 @@ def estimate_market_value(car_data: dict) -> float:
     else:
         base_value = 8000
 
-    # Depreciation by age
     age = calculate_age(year)
     base_value -= age * 600
-
-    # Depreciation by mileage
     base_value -= (mileage / 10000) * 120
 
-    # Prevent unrealistic low value
     return round(max(1500, base_value), 2)
 
+
 # =========================
-# TRANSACTION COST MODEL
+# TRANSACTION COST
 # =========================
 def calculate_transaction_cost(price: float) -> float:
-    """
-    Estimates transaction related cost.
-    """
     if price <= 4000:
         return round(price * 0.15, 2)
     elif price <= 15000:
@@ -136,13 +157,11 @@ def calculate_transaction_cost(price: float) -> float:
     else:
         return round(price * 0.08, 2)
 
+
 # =========================
 # RISK SCORE
 # =========================
 def calculate_risk_score(car_data: dict) -> float:
-    """
-    Risk score from 0 (low risk) to 10 (high risk).
-    """
     age = calculate_age(car_data.get("year_numeric"))
     mileage = safe_float(car_data.get("mileage_numeric"), 0)
     brand = car_data.get("brand", "")
@@ -170,19 +189,11 @@ def calculate_risk_score(car_data: dict) -> float:
 
     return max(0, min(10, round(risk, 2)))
 
+
 # =========================
-# PROFIT CALCULATION (PRODUCTION SAFE)
+# PROFIT (PRODUCTION SAFE)
 # =========================
 def calculate_profit_and_recommendation(car_data: dict) -> dict:
-    """
-    FINAL production-safe profit logic.
-
-    Rules:
-    - Profit can NEVER be negative
-    - Exact profit value is always shown
-    - Label explains profit category only
-    """
-
     price = safe_float(car_data.get("price_numeric"), 0)
 
     market_value = estimate_market_value(car_data)
@@ -191,13 +202,11 @@ def calculate_profit_and_recommendation(car_data: dict) -> dict:
 
     raw_profit = market_value - (price + transaction_cost)
 
-    # Enforce safety: no negative profit
     if raw_profit <= 0:
         profit = 0
         profit_label = "NO_PROFIT"
     else:
         profit = round(raw_profit, 2)
-
         if profit < 800:
             profit_label = "LOW"
         elif profit < 2000:
@@ -205,7 +214,6 @@ def calculate_profit_and_recommendation(car_data: dict) -> dict:
         else:
             profit_label = "HIGH"
 
-    # Recommendation logic
     if profit_label == "HIGH" and risk_score < 4:
         recommendation = "STRONG BUY"
     elif profit_label in ["MEDIUM", "HIGH"] and risk_score < 6:
@@ -224,14 +232,11 @@ def calculate_profit_and_recommendation(car_data: dict) -> dict:
         "recommendation": recommendation,
     }
 
+
 # =========================
 # ML PRICE PREDICTION
 # =========================
 def predict_car_price_ml(car_data: dict) -> float:
-    """
-    Predicts price using ML model.
-    Supportive signal only.
-    """
     if not os.path.exists(ML_MODEL_PATH):
         raise FileNotFoundError("ML model not found")
 
@@ -248,38 +253,53 @@ def predict_car_price_ml(car_data: dict) -> float:
     fuel_encoded = hash(car_data.get("fuel_type", "unknown")) % 10
 
     X = np.array([[brand_encoded, age, mileage, fuel_encoded, mileage_per_year]])
-
     predicted = model.predict(X)[0]
+
     return round(max(0, predicted), 2)
+
 
 # =========================
 # ANALYSIS HELPERS
 # =========================
-def analyze_car(car_data: dict) -> dict:
+def rank_cars_by_investment_quality(cars: List[dict]) -> List[dict]:
     """
-    Full analysis for a single car.
-    """
-    analysis = calculate_profit_and_recommendation(car_data)
+    Rank cars based on investment quality.
 
-    return {
-        **car_data,
-        "age": calculate_age(car_data.get("year_numeric")),
-        "is_premium": is_premium_brand(car_data.get("brand")),
-        **analysis,
-    }
+    Score formula:
+    investment_score = profit - (risk_score * 500)
+    """
+
+    ranked = []
+
+    for car in cars:
+        profit = safe_float(car.get("profit"), 0)
+        risk = safe_float(car.get("risk_score"), 0)
+
+        investment_score = profit - (risk * 500)
+
+        ranked.append({
+            **car,
+            "investment_score": round(investment_score, 2)
+        })
+
+    return sorted(
+        ranked,
+        key=lambda x: x["investment_score"],
+        reverse=True
+    )
+
+
+def analyze_car(car_data: dict) -> dict:
+    analysis = calculate_profit_and_recommendation(car_data)
+    ...
+
 
 
 def analyze_multiple_cars(cars: List[dict]) -> List[dict]:
-    """
-    Runs analysis on multiple cars.
-    """
     return [analyze_car(car) for car in cars]
 
 
 def compare_cars(cars: List[dict]) -> dict:
-    """
-    Compares cars by profit and risk.
-    """
     analyzed = analyze_multiple_cars(cars)
 
     by_profit = sorted(analyzed, key=lambda x: safe_float(x.get("profit"), 0), reverse=True)
@@ -299,24 +319,25 @@ def compare_cars(cars: List[dict]) -> dict:
         "best_overall_deal": best_overall,
     }
 
+
 # =========================
-# AI SUGGESTION (REQUIRED PLACEHOLDER)
+# AI SUGGESTION (PLACEHOLDER)
 # =========================
 async def get_ai_suggestion(prompt: str, budget: Optional[float] = None) -> str:
-    """
-    Placeholder to keep API stable.
-    """
     return "AI suggestion is disabled. Profit analysis is active."
+
 
 # =========================
 # EXPORTS
 # =========================
 __all__ = [
+    "normalize_scraped_car",
     "load_car_data",
     "predict_car_price_ml",
     "estimate_market_value",
     "calculate_profit_and_recommendation",
     "calculate_risk_score",
+    "rank_cars_by_investment_quality",
     "analyze_multiple_cars",
     "compare_cars",
     "get_ai_suggestion",

@@ -1,127 +1,72 @@
-# Car Price Analysis & Buy Recommendations (Backend)
+# Car Price Analysis & Buy Recommendations API
 
-This project is a backend system designed to analyze used car listings, estimate fair market value, calculate profit & risk, and provide intelligent buy recommendations.
+This project is a production-ready backend API built with FastAPI to analyze used car listings and provide intelligent buy recommendations.  
+It takes RAW scraped car data as input, cleans and normalizes it, estimates fair market value, calculates profit and risk, and returns a safe, decision-ready response that can be directly consumed by web apps, mobile apps, or dashboards.
 
-The system is built for backend/API usage so that mobile apps, web apps, or dashboards can consume the analysis results easily.
-
----
-
-## 🚀 Tech Stack
-
-- Python
-- FastAPI
-- Uvicorn
-- Web scraping (Autoscout24)
-- Rule-based + AI-assisted price analysis
+The system is designed with strict business rules to ensure reliability in real-world usage: negative profit is never returned, loss-making cars are clearly labeled, and deprecated endpoints are safely forwarded to the latest production endpoint.  
+This makes the API suitable for scraper → backend → AI → UI pipelines as well as long-term production deployments.
 
 ---
 
-## 📁 Project Structure (Important)
+## Core API Endpoints
 
-
----
-
-## 🧠 Core Logic Explanation (For Backend Engineers)
-
-### 1️⃣ Scraping Layer (`scrapers/`)
-This layer is responsible for collecting used car listings.
-
-- `autoscout24_working_scraper.py`
-  - Scrapes car listings from Autoscout24
-  - Extracts price, mileage, year, location, fuel type, etc.
-
-- `autoscout24_working_scraper_fixed.py`
-  - Alternative or fixed version for scraping stability
-
-👉 Output: raw or semi-clean JSON data
+### Health Check
+**GET `/health`**  
+Checks whether the service is running.
 
 ---
 
-### 2️⃣ Data Processing (`scripts/`)
-- `convert_scraped_data.py`
-  - Cleans raw scraped data
-  - Normalizes price, mileage, year
-  - Prepares data for analysis & API consumption
+### Analyze Cars (MAIN PRODUCTION ENDPOINT)
+**POST `/analyze-cars/`**
 
----
-
-### 3️⃣ Analysis Engine (`app/ai_calculations.py`)
-Handles:
-- Market price estimation
-- Profit calculation
-- Risk scoring
-
-Example logic:
-- Compare listing price vs market average
-- Penalize high mileage / accident history
-- Boost newer models with good resale value
-
----
-
-### 4️⃣ Recommendation Engine (`app/car_recommendation_engine.py`)
-Produces human-readable recommendations:
-
-- ✅ Good Buy
-- ⚠️ Needs Review
-- ❌ Avoid
-
-Based on:
-- Price gap
+Analyzes multiple cars from RAW scraped data and returns:
+- Normalized numeric fields (price, mileage, year)
+- Estimated market value
+- Guaranteed non-negative profit
 - Risk score
-- Market demand
+- Clear buy recommendation
+
+**Key Guarantees**
+- Negative profit is never returned
+- Loss cars return `profit = 0` and recommendation = `DON'T BUY`
+- Safe for direct UI and backend usage
+
+This is the primary endpoint used in production.
 
 ---
 
-## 🔌 API Layer (FastAPI)
+### Deprecated Endpoint (Backward Compatibility)
+**POST `/ai/analyze`**
 
-### Entry Point
+This endpoint exists only for older clients.  
+Internally, it forwards requests to `/analyze-cars/` and guarantees identical results.
+
+---
+
+### Top Car Investment Opportunities
+**GET `/cars/top-deals`**
+
+Returns the best car investment opportunities based on profit and risk filters.
+
+Query modes:
+- `strict` → Only strong, risk-adjusted deals
+- `relaxed` → Includes near-miss deals (clearly labeled)
+
+Useful for dashboards and recommendation feeds.
+
+---
+
+## How to Run Locally
+
 ```bash
-uvicorn app.main:app --reload
-📡 API Endpoints (Example)
-🔹 POST /analyze-car
-
-Analyzes a car listing and returns price, profit & recommendation.
-
-Request (JSON)
-{
-  "brand": "BMW",
-  "model": "320d",
-  "year": 2019,
-  "mileage": 65000,
-  "listed_price": 18500
-}
-
-Response (JSON)
-{
-  "estimated_market_price": 20500,
-  "expected_profit": 2000,
-  "risk_score": 0.25,
-  "recommendation": "GOOD_BUY"
-}
-
-
-👉 Backend engineers can directly use this endpoint inside:
-
-Mobile apps
-
-Web dashboards
-
-Admin panels
-
-(Exact endpoints may vary depending on implementation.)
-
-🔐 Environment Variables
-
-Create a .env file in the project root (do NOT commit this file).
-
-Example:
-
-OPENAI_API_KEY=your_openai_api_key
-ENV=development
-
-▶️ How to Run (Local Development)
 pip install -r requirements.txt
 uvicorn app.main:app --reload
 
-## Future Improvements
-- Improve car price prediction using better feature engineering
+API will be available at:
+
+http://127.0.0.1:8000
+
+Swagger UI:
+
+http://127.0.0.1:8000/docs
+
