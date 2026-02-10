@@ -10,161 +10,139 @@ from typing import List, Optional
 # THIRD-PARTY LIBRARIES
 # =========================
 import joblib
-import openai
 from dotenv import load_dotenv
 import numpy as np
-
 
 # =========================
 # ENVIRONMENT & CONFIGURATION
 # =========================
 load_dotenv()
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
-MODEL_NAME = os.getenv("OPENAI_MODEL_NAME", "gpt-4o-mini")
-
 # =========================
-# PROJECT PATHS (CRITICAL)
+# PROJECT PATHS
 # =========================
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-DATA_PATH = os.path.join(
-    BASE_DIR, "data", "raw", "cars_data.json"
-)
-
-ML_MODEL_PATH = os.path.join(
-    BASE_DIR, "data", "ml_models", "ml_model.joblib"
-)
-
+DATA_PATH = os.path.join(BASE_DIR, "data", "raw", "cars_data.json")
+ML_MODEL_PATH = os.path.join(BASE_DIR, "data", "ml_models", "ml_model.joblib")
 
 # =========================
-# BRAND CATEGORIZATION
+# BRAND GROUPS
 # =========================
 PREMIUM_BRANDS = ["BMW", "MERCEDES", "AUDI", "TESLA", "PORSCHE", "LEXUS"]
 MID_TIER_BRANDS = ["VOLKSWAGEN", "TOYOTA", "HONDA", "MAZDA", "SUBARU"]
 BUDGET_BRANDS = ["DACIA", "SKODA", "SEAT", "KIA", "HYUNDAI"]
 
-
 # =========================
-# HELPER FUNCTIONS
+# BASIC HELPERS
 # =========================
 def calculate_age(year: Optional[int]) -> int:
+    """
+    Returns how old the car is.
+    If year is missing or invalid, age is 0.
+    """
     if not isinstance(year, int):
         return 0
     return max(0, datetime.now().year - year)
 
 
 def is_premium_brand(brand: Optional[str]) -> bool:
+    """
+    Checks if brand belongs to premium category.
+    """
     if not brand:
         return False
     return brand.upper() in PREMIUM_BRANDS
 
 
-# =========================
-# SAFE VALUE GETTER
-# =========================
-def safe_get(data: dict, key: str, default=0):
-    """Safely get value from dict, ensuring it's not None"""
-    value = data.get(key, default)
-    return value if value is not None else default
+def safe_float(value, default=0.0):
+    """
+    Converts value to float safely.
+    """
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return default
 
 
 def safe_int(value, default=0):
-    """Safely convert to int"""
-    if value is None:
-        return default
+    """
+    Converts value to int safely.
+    """
     try:
         return int(value)
-    except (ValueError, TypeError):
+    except (TypeError, ValueError):
         return default
-
-
-def safe_float(value, default=0.0):
-    """Safely convert to float"""
-    if value is None:
-        return default
-    try:
-        return float(value)
-    except (ValueError, TypeError):
-        return default
-
 
 # =========================
-# DATA LOADER
+# LOAD CLEAN CAR DATA
 # =========================
 def load_car_data() -> List[dict]:
+    """
+    Loads cleaned car dataset from disk.
+    """
     if not os.path.exists(DATA_PATH):
-        raise FileNotFoundError(f"Car data not found: {DATA_PATH}")
+        raise FileNotFoundError("Car data file not found")
 
     with open(DATA_PATH, "r", encoding="utf-8") as f:
         return json.load(f)
-
 
 # =========================
 # MARKET VALUE ESTIMATION
 # =========================
 def estimate_market_value(car_data: dict) -> float:
-    price = safe_float(car_data.get("price_numeric"), 20000)
+    """
+    Estimates realistic resale market value.
+
+    This does NOT depend on listed price.
+    It represents expected market resale value.
+    """
+
     brand = car_data.get("brand", "")
     year = car_data.get("year_numeric")
     mileage = safe_float(car_data.get("mileage_numeric"), 0)
-    fuel_type = (car_data.get("fuel_type") or "").lower()
 
-    base_value = price if price > 0 else 20000
-
-    if brand and is_premium_brand(brand):
-        brand_adjustment = base_value * 0.10
+    # Base market value by brand category
+    if is_premium_brand(brand):
+        base_value = 12000
     elif brand and brand.upper() in MID_TIER_BRANDS:
-        brand_adjustment = base_value * 0.05
+        base_value = 9000
     elif brand and brand.upper() in BUDGET_BRANDS:
-        brand_adjustment = -base_value * 0.05
+        base_value = 7000
     else:
-        brand_adjustment = 0
+        base_value = 8000
 
+    # Depreciation by age
     age = calculate_age(year)
-    expected_mileage = age * 15000
-    mileage_diff = mileage - expected_mileage
+    base_value -= age * 600
 
-    mileage_adjustment = (
-        -(mileage_diff / 10000) * 500
-        if mileage_diff > 0
-        else (abs(mileage_diff) / 10000) * 300
-    )
+    # Depreciation by mileage
+    base_value -= (mileage / 10000) * 120
 
-    if age <= 2:
-        age_adjustment = base_value * 0.05
-    elif age <= 5:
-        age_adjustment = 0
-    elif age <= 10:
-        age_adjustment = -base_value * 0.05
+    # Prevent unrealistic low value
+    return round(max(1500, base_value), 2)
+
+# =========================
+# TRANSACTION COST MODEL
+# =========================
+def calculate_transaction_cost(price: float) -> float:
+    """
+    Estimates transaction related cost.
+    """
+    if price <= 4000:
+        return round(price * 0.15, 2)
+    elif price <= 15000:
+        return round(price * 0.10, 2)
     else:
-        age_adjustment = -base_value * 0.10
-
-    if "electric" in fuel_type or "hybrid" in fuel_type:
-        fuel_adjustment = base_value * 0.08
-    elif "diesel" in fuel_type:
-        fuel_adjustment = -base_value * 0.03
-    else:
-        fuel_adjustment = 0
-
-    estimated_value = (
-        base_value
-        + brand_adjustment
-        + mileage_adjustment
-        + age_adjustment
-        + fuel_adjustment
-    )
-
-    return round(
-        max(base_value * 0.85, min(base_value * 1.2, estimated_value)),
-        2
-    )
-
+        return round(price * 0.08, 2)
 
 # =========================
 # RISK SCORE
 # =========================
 def calculate_risk_score(car_data: dict) -> float:
+    """
+    Risk score from 0 (low risk) to 10 (high risk).
+    """
     age = calculate_age(car_data.get("year_numeric"))
     mileage = safe_float(car_data.get("mileage_numeric"), 0)
     brand = car_data.get("brand", "")
@@ -185,258 +163,104 @@ def calculate_risk_score(car_data: dict) -> float:
     elif mileage > 100000:
         risk += 1
 
-    if brand and is_premium_brand(brand):
+    if is_premium_brand(brand):
         risk -= 1
     elif brand and brand.upper() in BUDGET_BRANDS:
         risk += 1
 
     return max(0, min(10, round(risk, 2)))
 
-
 # =========================
-# PROFIT & RECOMMENDATION
+# PROFIT CALCULATION (PRODUCTION SAFE)
 # =========================
 def calculate_profit_and_recommendation(car_data: dict) -> dict:
+    """
+    FINAL production-safe profit logic.
+
+    Rules:
+    - Profit can NEVER be negative
+    - Exact profit value is always shown
+    - Label explains profit category only
+    """
+
     price = safe_float(car_data.get("price_numeric"), 0)
-    estimated_value = estimate_market_value(car_data)
+
+    market_value = estimate_market_value(car_data)
+    transaction_cost = calculate_transaction_cost(price)
     risk_score = calculate_risk_score(car_data)
 
-    age = calculate_age(car_data.get("year_numeric"))
-    mileage = safe_float(car_data.get("mileage_numeric"), 0)
+    raw_profit = market_value - (price + transaction_cost)
 
-    total_costs = 300 + min(age * 50, 500) + (mileage / 100000) * 200
-    profit = estimated_value - (price + total_costs)
-
-    if profit > 3000 and risk_score < 3:
-        rec = "STRONG BUY"
-    elif profit > 1500 and risk_score < 5:
-        rec = "BUY"
-    elif profit > 500:
-        rec = "CONSIDER"
-    elif profit > -500:
-        rec = "FAIR DEAL"
+    # Enforce safety: no negative profit
+    if raw_profit <= 0:
+        profit = 0
+        profit_label = "NO_PROFIT"
     else:
-        rec = "DON'T BUY"
+        profit = round(raw_profit, 2)
+
+        if profit < 800:
+            profit_label = "LOW"
+        elif profit < 2000:
+            profit_label = "MEDIUM"
+        else:
+            profit_label = "HIGH"
+
+    # Recommendation logic
+    if profit_label == "HIGH" and risk_score < 4:
+        recommendation = "STRONG BUY"
+    elif profit_label in ["MEDIUM", "HIGH"] and risk_score < 6:
+        recommendation = "BUY"
+    elif profit_label == "LOW":
+        recommendation = "CONSIDER"
+    else:
+        recommendation = "DON'T BUY"
 
     return {
-        "estimated_market_value": estimated_value,
-        "profit": round(profit, 2),
+        "estimated_market_value": market_value,
+        "transaction_cost": transaction_cost,
+        "profit": profit,
+        "profit_label": profit_label,
         "risk_score": risk_score,
-        "recommendation": rec,
+        "recommendation": recommendation,
     }
 
-
 # =========================
-# ML PRICE PREDICTION (SAFE)
+# ML PRICE PREDICTION
 # =========================
 def predict_car_price_ml(car_data: dict) -> float:
+    """
+    Predicts price using ML model.
+    Supportive signal only.
+    """
     if not os.path.exists(ML_MODEL_PATH):
         raise FileNotFoundError("ML model not found")
 
     model = joblib.load(ML_MODEL_PATH)
 
     current_year = datetime.now().year
-
-    year = car_data.get("year_numeric")
-    if not isinstance(year, int):
-        year = current_year
-
+    year = safe_int(car_data.get("year_numeric"), current_year)
     age = max(1, current_year - year)
 
-    mileage = car_data.get("mileage_numeric")
-    if not isinstance(mileage, (int, float)):
-        mileage = 0
-
+    mileage = safe_float(car_data.get("mileage_numeric"), 0)
     mileage_per_year = mileage / age
 
     brand_encoded = hash(car_data.get("brand", "unknown")) % 100
     fuel_encoded = hash(car_data.get("fuel_type", "unknown")) % 10
 
-    X = np.array([[
-        brand_encoded,
-        age,
-        mileage,
-        fuel_encoded,
-        mileage_per_year
-    ]])
+    X = np.array([[brand_encoded, age, mileage, fuel_encoded, mileage_per_year]])
 
-    raw_price = model.predict(X)[0]
-    safe_price = max(0, raw_price)
-
-    base_price = car_data.get("price_numeric") or 20000
-    final_price = max(
-        base_price * 0.5,
-        min(base_price * 1.5, safe_price)
-    )
-
-    return round(float(final_price), 2)
-
-
-# =========================
-# AI SUGGESTION (COMPLETELY SAFE VERSION)
-# =========================
-async def get_ai_suggestion(prompt: str, budget: Optional[float] = None) -> str:
-    """
-    COMPLETELY SAFE: Uses YOUR REAL scraped cars with full None protection
-    """
-    try:
-        # Load cars
-        try:
-            all_cars = load_car_data()
-        except:
-            all_cars = []
-        
-        if not all_cars:
-            budget_str = f"€{budget:,.0f}" if budget else "Not specified"
-            prompt_with_budget = f"{prompt}\nBudget: {budget_str}"
-            
-            client = openai.OpenAI(api_key=openai.api_key)
-            response = client.chat.completions.create(
-                model=MODEL_NAME,
-                messages=[
-                    {"role": "system", "content": "You are a car buying assistant."},
-                    {"role": "user", "content": prompt_with_budget},
-                ],
-                temperature=0.7,
-                max_tokens=400,
-            )
-            return response.choices[0].message.content + "\n\n⚠️ Note: No car database available."
-        
-        # Filter by budget (SAFE)
-        if budget:
-            affordable_cars = []
-            for car in all_cars:
-                price = car.get('price_numeric')
-                if price and isinstance(price, (int, float)) and price <= budget:
-                    affordable_cars.append(car)
-        else:
-            affordable_cars = all_cars
-        
-        if not affordable_cars:
-            prices = [c.get('price_numeric') for c in all_cars if c.get('price_numeric')]
-            min_price = min(prices) if prices else 0
-            max_price = max(prices) if prices else 0
-            budget_display = budget if budget else 0
-            
-            return f"""❌ No cars found within budget of €{budget_display:,.0f}.
-
-Database: {len(all_cars)} total cars
-Lowest price: €{min_price:,.0f}
-Highest price: €{max_price:,.0f}
-
-💡 Try increasing your budget."""
-        
-        # Analyze cars (SAFE)
-        analyzed_cars = analyze_multiple_cars(affordable_cars[:15])
-        analyzed_cars.sort(key=lambda x: safe_float(x.get('profit'), 0), reverse=True)
-        top_5 = analyzed_cars[:5]
-        
-        # Build context (COMPLETELY SAFE)
-        cars_context = f"""
-📊 REAL CAR DATABASE:
-- Total cars: {len(all_cars)}
-- Within budget: {len(affordable_cars)}
-- Top deals: {len(top_5)}
-
-🚗 TOP 5 RECOMMENDATIONS:
-"""
-        
-        for i, car in enumerate(top_5, 1):
-            # SAFE extraction with defaults
-            title = car.get('title') or 'Unknown Car'
-            brand = car.get('brand') or 'Unknown'
-            year = car.get('year_numeric')
-            year_display = str(year) if year else 'N/A'
-            mileage = safe_int(car.get('mileage_numeric'), 0)
-            fuel = car.get('fuel_type') or 'N/A'
-            gearbox = car.get('gearbox') or 'N/A'
-            price = safe_float(car.get('price_numeric'), 0)
-            market_value = safe_float(car.get('estimated_market_value'), 0)
-            profit = safe_float(car.get('profit'), 0)
-            risk = safe_float(car.get('risk_score'), 0)
-            recommendation = car.get('recommendation') or 'N/A'
-            url = car.get('url') or 'N/A'
-            
-            cars_context += f"""
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-{i}. {title}
-
-Info:
-  • Brand: {brand}
-  • Year: {year_display}
-  • Mileage: {mileage:,} km
-  • Fuel: {fuel}
-  • Gearbox: {gearbox}
-
-Analysis:
-  💰 Price: €{price:,.0f}
-  📈 Value: €{market_value:,.0f}
-  💸 Profit: €{profit:,.0f}
-  ⚠️ Risk: {risk:.1f}/10
-  ✅ Rating: {recommendation}
-
-🔗 Link: {url[:60]}...
-"""
-        
-        # Build prompt
-        budget_display = f"€{budget:,.0f}" if budget else "Not specified"
-        enhanced_prompt = f"""User Question: {prompt}
-Budget: {budget_display}
-
-{cars_context}
-
-Task: Recommend specific cars from above with actual prices and reasons."""
-
-        # Call OpenAI
-        client = openai.OpenAI(api_key=openai.api_key)
-        response = client.chat.completions.create(
-            model=MODEL_NAME,
-            messages=[
-                {
-                    "role": "system", 
-                    "content": "You are a car advisor. Recommend specific cars from the list with actual prices and explain why."
-                },
-                {"role": "user", "content": enhanced_prompt},
-            ],
-            temperature=0.7,
-            max_tokens=600,
-        )
-        
-        suggestion = response.choices[0].message.content
-        
-        # Add footer (SAFE)
-        prices_in_budget = [safe_float(c.get('price_numeric'), 0) for c in affordable_cars]
-        min_price = min(prices_in_budget) if prices_in_budget else 0
-        max_price = max(prices_in_budget) if prices_in_budget else 0
-        
-        suggestion += f"""
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📊 Based on {len(affordable_cars)} real cars
-💰 Range: €{min_price:,.0f} - €{max_price:,.0f}
-🔄 Updated: {datetime.now().strftime('%Y-%m-%d')}"""
-        
-        return suggestion
-        
-    except Exception as e:
-        error_type = type(e).__name__
-        error_msg = str(e)
-        
-        result = f"❌ Error ({error_type}): {error_msg}"
-        
-        if "api_key" in error_msg.lower():
-            result += "\n\n💡 Check OPENAI_API_KEY in .env"
-        elif "format" in error_msg.lower():
-            result += "\n\n💡 Data format error - check cars_data.json"
-        
-        return result
-
+    predicted = model.predict(X)[0]
+    return round(max(0, predicted), 2)
 
 # =========================
 # ANALYSIS HELPERS
 # =========================
 def analyze_car(car_data: dict) -> dict:
+    """
+    Full analysis for a single car.
+    """
     analysis = calculate_profit_and_recommendation(car_data)
+
     return {
         **car_data,
         "age": calculate_age(car_data.get("year_numeric")),
@@ -446,10 +270,16 @@ def analyze_car(car_data: dict) -> dict:
 
 
 def analyze_multiple_cars(cars: List[dict]) -> List[dict]:
+    """
+    Runs analysis on multiple cars.
+    """
     return [analyze_car(car) for car in cars]
 
 
 def compare_cars(cars: List[dict]) -> dict:
+    """
+    Compares cars by profit and risk.
+    """
     analyzed = analyze_multiple_cars(cars)
 
     by_profit = sorted(analyzed, key=lambda x: safe_float(x.get("profit"), 0), reverse=True)
@@ -457,7 +287,8 @@ def compare_cars(cars: List[dict]) -> dict:
 
     best_overall = max(
         analyzed,
-        key=lambda x: safe_float(x.get("profit"), 0) - safe_float(x.get("risk_score"), 0) * 500,
+        key=lambda x: safe_float(x.get("profit"), 0)
+        - safe_float(x.get("risk_score"), 0) * 500,
         default=None,
     )
 
@@ -468,6 +299,14 @@ def compare_cars(cars: List[dict]) -> dict:
         "best_overall_deal": best_overall,
     }
 
+# =========================
+# AI SUGGESTION (REQUIRED PLACEHOLDER)
+# =========================
+async def get_ai_suggestion(prompt: str, budget: Optional[float] = None) -> str:
+    """
+    Placeholder to keep API stable.
+    """
+    return "AI suggestion is disabled. Profit analysis is active."
 
 # =========================
 # EXPORTS
