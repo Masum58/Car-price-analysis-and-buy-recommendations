@@ -1,84 +1,218 @@
-from pydantic import BaseModel, Field
-from typing import Optional, List
+from pydantic import BaseModel, Field, ConfigDict
+from typing import Optional, List, Dict, Any
 from datetime import datetime
 
-class CarInput(BaseModel):
-    """Car input data from scraper or user"""
-    title: str = Field(..., description="Car title/name")
-    brand: Optional[str] = Field(None, description="Car brand")
-    year_numeric: Optional[int] = Field(None, description="Manufacturing year", ge=1900, le=2030)
-    mileage_numeric: Optional[float] = Field(None, description="Mileage in km", ge=0)
-    price_numeric: Optional[float] = Field(None, description="Listed price", ge=0)
-    fuel_type: Optional[str] = Field(None, description="Fuel type (petrol/diesel/electric)")
-    transmission: Optional[str] = Field(None, description="Transmission type")
-    url: Optional[str] = Field(None, description="Source URL")
 
-    class Config:
-        json_schema_extra = {
+# =========================================================
+# CLEAN CAR INPUT MODEL
+# =========================================================
+# =========================================================
+# CLEAN CAR INPUT MODEL
+# =========================================================
+class CarInput(BaseModel):
+    """
+    Car input data in clean numeric format.
+    Used when frontend sends already cleaned data.
+    """
+
+    model_config = ConfigDict(
+        extra="forbid",
+        json_schema_extra={
             "example": {
                 "title": "Tesla Model 3 2020",
                 "brand": "Tesla",
                 "year_numeric": 2020,
                 "mileage_numeric": 50000,
                 "price_numeric": 35000,
-                "fuel_type": "electric",
-                "transmission": "automatic"
+                "fuel_type": "Electric",
+                "transmission": "Automatic",
+                "seats": 5
             }
         }
+    )
 
+    title: str = Field(..., description="Car title or model name")
+
+    brand: Optional[str] = Field(
+        None,
+        description="Car manufacturer brand"
+    )
+
+    year_numeric: Optional[int] = Field(
+        None,
+        ge=1900,
+        le=2035,
+        description="Manufacturing year"
+    )
+
+    mileage_numeric: Optional[float] = Field(
+        None,
+        ge=0,
+        description="Mileage in kilometers"
+    )
+
+    price_numeric: Optional[float] = Field(
+        None,
+        ge=0,
+        description="Listed price in Euro"
+    )
+
+    fuel_type: Optional[str] = Field(
+        None,
+        description="Fuel type (Gasoline, Diesel, Electric, Hybrid)"
+    )
+
+    transmission: Optional[str] = Field(
+        None,
+        description="Transmission type (Manual, Automatic)"
+    )
+
+    seats: Optional[int] = Field(
+        None,
+        ge=1,
+        le=9,
+        description="Number of seats"
+    )
+
+    url: Optional[str] = Field(
+        None,
+        description="Source listing URL"
+    )
+
+
+
+# =========================================================
+# ANALYSIS RESULT MODEL
+# =========================================================
 class CarAnalysis(BaseModel):
-    """Car analysis result with profit/risk scores"""
+    """
+    Production-safe car analysis output format.
+    """
+
+    model_config = ConfigDict(extra="forbid")
+
     title: str
     brand: Optional[str]
     year_numeric: Optional[int]
     mileage_numeric: Optional[float]
     price_numeric: Optional[float]
-    estimated_market_value: Optional[float] = Field(None, description="Estimated fair market value")
-    profit: Optional[float] = Field(None, description="Potential profit")
-    risk_score: Optional[float] = Field(None, description="Risk score (0-10)")
-    recommendation: Optional[str] = Field(None, description="Buy recommendation")
-    age: Optional[int] = Field(None, description="Car age in years")
-    is_premium: Optional[bool] = Field(None, description="Is premium brand")
 
+    estimated_market_value: Optional[float]
+    transaction_cost: Optional[float]
+    profit: Optional[float]
+    profit_label: Optional[str]
+    risk_score: Optional[float]
+    recommendation: Optional[str]
+
+    age: Optional[int]
+    is_premium: Optional[bool]
+    investment_score: Optional[float] = None
+
+
+# =========================================================
+# COMPARE MULTIPLE CARS REQUEST
+# =========================================================
 class CompareRequest(BaseModel):
-    """Request to compare cars"""
-    cars: List[CarInput] = Field(..., description="List of cars to compare")
+    """
+    Request to compare multiple cars.
+    """
 
+    model_config = ConfigDict(extra="forbid")
+
+    cars: List[CarInput]
+
+
+# =========================================================
+# COMPARE BY NAME REQUEST
+# =========================================================
 class CompareByNameRequest(BaseModel):
-    """Request to compare cars by name"""
-    car_names: List[str] = Field(..., description="List of car names/titles")
+    """
+    Compare cars using only titles.
+    """
 
+    model_config = ConfigDict(extra="forbid")
+
+    car_names: List[str]
+
+
+# =========================================================
+# AI SUGGESTION REQUEST
+# =========================================================
 class AISuggestionRequest(BaseModel):
-    """Request for AI-powered car suggestion"""
-    prompt: str = Field(..., description="User requirements (budget, type, needs)")
-    budget: Optional[float] = Field(None, description="Maximum budget")
-    
-    class Config:
-        json_schema_extra = {
+    """
+    User request for AI-powered suggestion.
+    """
+
+    model_config = ConfigDict(
+        extra="forbid",
+        json_schema_extra={
             "example": {
                 "prompt": "I need a reliable family car under 30000 euros",
                 "budget": 30000
             }
         }
+    )
 
+    prompt: str = Field(
+        ...,
+        description="User requirements such as budget and needs"
+    )
+
+    budget: Optional[float] = Field(
+        None,
+        ge=0,
+        description="Maximum budget in Euro"
+    )
+
+
+# =========================================================
+# AI SUGGESTION RESPONSE
+# =========================================================
 class AISuggestionResponse(BaseModel):
-    """AI suggestion response"""
-    suggestion: str = Field(..., description="AI-generated suggestion")
-    timestamp: datetime = Field(default_factory=datetime.now)
-from typing import Dict, Any
+    """
+    AI-generated suggestion output.
+    """
 
+    suggestion: str
+    timestamp: datetime = Field(default_factory=datetime.now)
+
+
+# =========================================================
+# LIST RESPONSE MODEL
+# =========================================================
 class CarsListResponse(BaseModel):
+    """
+    Response for listing cleaned dataset.
+    """
+
+    model_config = ConfigDict(extra="forbid")
+
     total_cars: int
     cars_preview: List[Dict[str, Any]]
     statistics: Dict[str, Dict[str, int]]
 
 
+# =========================================================
+# BRAND COUNT MODEL
+# =========================================================
 class BrandCount(BaseModel):
+
+    model_config = ConfigDict(extra="forbid")
+
     brand: str
     count: int
 
 
+# =========================================================
+# DATASET STATISTICS RESPONSE
+# =========================================================
 class CarsStatsResponse(BaseModel):
+    """
+    Dataset statistical overview.
+    """
+
+    model_config = ConfigDict(extra="forbid")
+
     total_cars: int
     price_range: Dict[str, float]
     year_range: Dict[str, int]
