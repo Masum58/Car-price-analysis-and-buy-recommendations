@@ -54,6 +54,254 @@ Query modes:
 
 Useful for dashboards and recommendation feeds.
 
+1️⃣ /cars/compare-user-context
+
+This endpoint compares multiple cars based on user preferences instead of pure financial logic.
+
+It evaluates how well each car matches user requirements such as:
+
+- Maximum budget
+
+- Minimum number of seats
+
+- Preferred gearbox type
+
+- Preferred fuel type
+
+Each car receives a user_fit_score based on matching criteria.
+The response includes:
+
+all_cars (each with user_fit_score and match reasons)
+
+- best_match
+
+- comparison_reason
+
+How it works:
+
+- User context is received.
+
+- Each car is evaluated against user preferences.
+
+- Matching rules increase score.
+
+- Car with highest score is selected as best match.
+
+Example request:
+
+{
+  "user_context": {
+    "max_budget": 20000,
+    "min_seats": 5,
+    "preferred_gearbox": "Automatic",
+    "preferred_fuel_type": "Diesel"
+  },
+  "cars": [
+    {
+      "title": "Peugeot 208",
+      "brand": "Peugeot",
+      "year_numeric": 2014,
+      "mileage_numeric": 169000,
+      "price_numeric": 2990,
+      "fuel_type": "Gasoline",
+      "transmission": "Manual",
+      "seats": 5
+    },
+    {
+      "title": "BMW 320d 2018",
+      "brand": "BMW",
+      "year_numeric": 2018,
+      "mileage_numeric": 80000,
+      "price_numeric": 18000,
+      "fuel_type": "Diesel",
+      "transmission": "Automatic",
+      "seats": 5
+    }
+  ]
+}
+
+This endpoint is useful for personalized recommendations.
+
+2️⃣ /cars/compare-investment
+
+This endpoint compares cars using investment logic.
+
+It analyzes each car using:
+
+- Estimated market value
+
+- Transaction cost
+
+- Profit (never negative in production)
+
+- Risk score
+
+- Investment score
+
+Investment score formula:
+
+investment_score = profit - (risk_score * 500)
+
+The response includes:
+
+- all_cars
+
+- best_by_profit
+
+- best_by_risk
+
+- best_overall_deal
+
+How it works:
+
+- Clean car input is received.
+
+- Financial analysis is performed.
+
+- Profit is forced to zero if negative.
+
+- Investment score is calculated.
+
+- Best selections are returned.
+
+Example request:
+
+{
+  "cars": [
+    {
+      "title": "Peugeot 208",
+      "brand": "Peugeot",
+      "year_numeric": 2014,
+      "mileage_numeric": 169000,
+      "price_numeric": 2990
+    },
+    {
+      "title": "BMW 320d 2018",
+      "brand": "BMW",
+      "year_numeric": 2018,
+      "mileage_numeric": 80000,
+      "price_numeric": 25000
+    }
+  ]
+}
+
+This endpoint is designed for financial decision making and dealer-side investment analysis.
+
+
+Profit Calculation Logic:
+
+The system calculates profit using a structured financial estimation pipeline.
+Step 1: Market Value Estimation:
+
+Each car’s fair market value is estimated using:
+
+
+Vehicle age
+
+
+Mileage
+
+
+Brand category (premium vs non-premium)
+
+
+Fuel type
+
+
+Depreciation logic
+
+
+This produces:
+estimated_market_value
+
+
+Step 2: Transaction Cost Calculation:
+
+Transaction cost is calculated as a percentage of the listed price:
+transaction_cost = price_numeric × transaction_rate
+
+This represents:
+
+
+Dealer margin
+
+
+Registration cost
+
+
+Operational cost
+
+
+Risk buffer
+
+
+
+Step 3: Raw Profit Formula:
+
+Raw profit is calculated as:
+raw_profit = estimated_market_value - price_numeric - transaction_cost
+
+
+Step 4: Production Safety Rule:
+
+In production mode, negative profit is never returned.
+If raw_profit is negative:
+profit = 0
+profit_label = "NO_PROFIT"
+
+This ensures:
+
+
+No misleading negative values
+
+
+Cleaner UI output
+
+
+Safe financial interpretation
+
+
+
+Profit Labels
+Profit is categorized into investment tiers:
+Profit ValueLabel0NO_PROFITSmall marginLOWModerateMEDIUMHigh marginHIGH
+
+Investment Score Formula
+For investment comparison endpoints:
+investment_score = profit - (risk_score × 500)
+
+This means:
+
+
+Higher profit increases score
+
+
+Higher risk reduces score
+
+
+A car with high profit but high risk may not rank first
+
+
+
+Risk Score (0–10)
+Risk score is derived from:
+
+
+Age
+
+
+Mileage
+
+
+Brand reliability
+
+
+Market volatility
+
+
+Lower risk = better investment stability.
+
+
 ---
 
 ## How to Run Locally

@@ -86,27 +86,33 @@ class CarInput(BaseModel):
 # =========================================================
 class CarAnalysis(BaseModel):
     """
-    Production-safe car analysis output format.
+    Final production-safe car analysis output.
+    Matches actual response structure from analysis pipeline.
     """
+
+    title: str
+    brand: Optional[str] = None
+    year_numeric: Optional[int] = None
+    mileage_numeric: Optional[float] = None
+    price_numeric: Optional[float] = None
+
+    fuel_type: Optional[str] = None
+    transmission: Optional[str] = None
+    url: Optional[str] = None
+
+    estimated_market_value: Optional[float] = None
+    transaction_cost: Optional[float] = None
+    profit: Optional[float] = None
+    profit_label: Optional[str] = None
+    risk_score: Optional[float] = None
+    recommendation: Optional[str] = None
+
+    age: Optional[int] = None
+    is_premium: Optional[bool] = None
+    investment_score: Optional[float] = None
 
     model_config = ConfigDict(extra="forbid")
 
-    title: str
-    brand: Optional[str]
-    year_numeric: Optional[int]
-    mileage_numeric: Optional[float]
-    price_numeric: Optional[float]
-
-    estimated_market_value: Optional[float]
-    transaction_cost: Optional[float]
-    profit: Optional[float]
-    profit_label: Optional[str]
-    risk_score: Optional[float]
-    recommendation: Optional[str]
-
-    age: Optional[int]
-    is_premium: Optional[bool]
-    investment_score: Optional[float] = None
 
 
 # =========================================================
